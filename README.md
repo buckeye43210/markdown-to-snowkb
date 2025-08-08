@@ -2,7 +2,10 @@
 title: Documentation Should Be A Team Sport
 Subtitle: Creating Collaborative Technical Documentation
 Author: Rick Holbert
-Date: August 2025
+Date: 13 August 2025
+theme: PaloAlto
+colortheme: whale
+fontheme: professionalfonts
 ---
 
 ## Why Documentation Matters
@@ -16,7 +19,7 @@ Date: August 2025
 
 ## The Team Sport Mindset
 
-- Everyone contributes: developers, writers, and stakeholders.
+- Everyone contributes: developers, writers, and users.
 - Collaborative tools streamline the process.
 - Version control and automation enhance efficiency.
 - Goal: Create living, maintainable documentation.
@@ -25,18 +28,21 @@ Date: August 2025
 
 ## Workflow Overview
 
-- Tools: VS Code, Markdown, Mermaid, Pandoc, GitHub, ServiceNow, KeePass.
-- Steps: Write Markdown, preview diagrams, convert to HTML/PDF, collaborate, and publish.
+- Tools: VS Code, Markdown, Mermaid, Pandoc, GitHub.
+- Steps: Write, preview, collaborate, convert, publish.
 - Focus on simplicity, integration, and longevity.
 
 ------
 
 ## Benefits of Markdown
 
-- Longevity: Lightweight markup ensures durability (e.g., AT&T’s roff for patents in the 1970s, still readable today).
-- LLM Integration: Markdown’s simplicity enables AI-assisted editing and generation (e.g., Grok 3 for content suggestions).
+- Longevity: Lightweight markup ensures durability
+- AT&T’s roff for patent documents dates from the 1970s, still readable today
+- LLM Integration: Markdown’s simplicity enables AI-assisted editing and generation (e.g., LLM for content suggestions).
 - GitHub Rendering: Native support for Markdown and Mermaid diagrams in GitHub for seamless collaboration.
-- Markdown: Structured, portable, and future-proof format.
+- Encourages focus on document content and structure.
+- Markdown: Structured, portable, future-proof format.
+- Wordprocessors come and go -- Markdown endures.
 
 ------
 
@@ -54,19 +60,19 @@ graph TD
 
 ------
 
+## The Process
+
 Step 1: Write VS Code using Markdown
 
-- Use VS Code with the Markdown Preview Mermaid Support plugin.
+- Use VS Code with the preview plugin.
 - Write documentation in Markdown for simplicity.
-- Mermaid diagrams for visual workflows.
+- Insert Mermaid diagrams for visual workflows.
 - Preview diagrams in real-time for accuracy.
 
-------
-
-## Mermaid Diagram Example
+### Mermaid Diagram Example
 
 ```mermaid
-graph TD
+graph LR
     A[Write Markdown] --> B[Add Mermaid Diagrams]
     B --> C[Preview in VS Code]
     C --> D[Commit to GitHub]
@@ -76,17 +82,16 @@ graph TD
 
 Step 2: Convert Markdown with Pandoc
 
-- Pandoc converts Markdown to HTML, PDF or other formats.
+- Pandoc converts Markdown to HTML, PDF, etc.
 - Use mermaid-filter to render Mermaid diagrams.
-- Command: `pandoc -F mermaid-filter -t beamer input.md -o output.pdf`
+- `pandoc -F mermaid-filter input.md -o output.pdf`
 - Ensures diagrams are embedded in the final document.
 
-------
 
 Step 3: Styling with CSS from .docx
 
-- Create a .docx file with desired styles (e.g., fonts, colors).
-- Convert .docx to CSS using tools like docx2css.
+- Use a .docx file with desired styles (e.g., fonts, colors).
+- Convert .docx to CSS using tools like html2css.
 - Apply CSS to HTML output for consistent formatting.
 - Example: Define heading styles, font sizes, and colors.
 
@@ -97,33 +102,42 @@ Step 4: Collaboration with GitHub
 - Host Markdown files in a GitHub repository.
 - Use pull requests for team reviews and edits.
 - Track changes and maintain version history.
-- Mermaid diagrams render natively on GitHub.
+- Markdown and Mermaid diagrams render natively.
 
-------
-
-## GitHub Collaboration Workflow
+### GitHub Collaboration Workflow
 
 ```mermaid
-graph TD
-    A[Developer A: Edit Markdown] --> B[Push to Branch]
-    B --> C[Create Pull Request]
-    C --> D[Team Review]
-    D --> E[Merge to Main]
-    E --> F[Publish Documentation]
+graph LR
+    A[Edit Markdown] --> B[Push to Branch]
+    B -->      C[Create Pull Request]
+    C -->      D[Team Review]
+    D -->      E{Approved}
+    E -->|Yes| F[Merge to Main]
+    E -.->|No| A
+    F -->      G[Publish]
 ```
 
 ------
 
-Step 5: Publishing to ServiceNow KB
+Step 5: Manual ServiceNow KB Publishing
+
+- Open ServiceNow KB Article in HTML Edit Mode
+- Paste HTML article contents into HTML editor
+- Click Update
+- Preview SNOW KB Article
+- Upload Images and Submit for Review
+
+Step 6: Automatic ServiceNow KB Publishing
 
 - Use ServiceNow Knowledge Base API to publish documentation.
 - Automate content updates with Makefiles and scripts.
 - Store API credentials securely in KeePass.
 - Ensure documentation is accessible to stakeholders.
+- This would be much easier with GitHub Actions
 
 ------
 
-## ServiceNow API Integration
+### ServiceNow API Integration
 
 ```mermaid
 sequenceDiagram
@@ -138,24 +152,22 @@ sequenceDiagram
 
 ------
 
-Step 6: Automating with Makefile
+Step 7: Automating with Makefile
 
 - Create a Makefile to automate conversions.
 - Example tasks: Convert Markdown to HTML/PDF, push to GitHub, etc.
 - Simplifies repetitive tasks for the team.
-- Command: `make pdf , make html, or make push`
+- Commands: `make pdf, make html, or make push`
 
-------
-
-## Makefile Example
+### Makefile Example
 
 ```makefile
 pdf:
-    pandoc -F mermaid-filter -t beamer input.md -o output.pdf
+    pandoc -F mermaid-filter in.md -o out.pdf
 html:
-    pandoc -F mermaid-filter --standalone --css=styles.css input.md -o output.html
+    pandoc -F mermaid-filter -s in.md -o out.html
 push:
-    git add . && git commit -m "Update docs" && git push
+    git commit -m "my change message" -a && git push
 ```
 
 ------
@@ -163,8 +175,8 @@ push:
 ## Conclusion
 
 - Documentation thrives with team collaboration.
-- Markdown’s longevity, LLM integration, and GitHub rendering enhance workflows.
-- Tools like VS Code, Pandoc, GitHub, and ServiceNow streamline the process.
+- Use Markdown for longevity, LLM integration, image and diagram integration.
+- VS Code, Pandoc, GitHub, and Make streamline the process.
 - Mermaid diagrams add clarity and engagement.
-- Let's make documentation a team sport!
+- Let's make documentation a team sport together!
 

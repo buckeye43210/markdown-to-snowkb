@@ -129,15 +129,15 @@ pandoc -F mermaid-filter -t html in.md -o out.html
 - Extract CSS from style section of HTML.
 - Apply to HTML: `pandoc --css=styles.css`.
 - Example: Headings, font sizes, colors.
+- Example Command:
+
+```bash
+pandoc -F mermaid-filter --css=styles.css -t html in.md -o out.html
+```
 
 ---
 
 ## Step 4: GitHub Collaboration
-- Host Markdown in GitHub repository.
-- Use pull requests for reviews, edits.
-- Track changes, maintain history.
-- Native Markdown/Mermaid rendering.
-
 
 ```mermaid
 graph LR
@@ -158,6 +158,11 @@ graph LR
     style F fill:#2E8B57,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
     style G fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
 ```
+
+- Host Markdown in GitHub repository.
+- Use pull requests for reviews, edits.
+- Track changes, maintain history.
+- Native Markdown/Mermaid rendering.
 
 ---
 
@@ -230,12 +235,17 @@ clean:
 sequenceDiagram
     participant J as Jenkins
     participant C as Jenkins Credentials
-    participant S as SNOW API
+    participant S as ServiceNow API
+    activate J
     J->>C: Fetch Credentials
+    Note left of J: Uses Jenkins Credentials Plugin
     C-->>J: Return Credentials
-    J->>J: Run `make html`
-    J->>S: POST JSON to /api/now/table/kb_knowledge
+    J->J: Run `make html`
+    Note over J: Converts Markdown to HTML
+    J->>S: POST JSON Payload
+    Note over J,S: {"short_description": "Documentation Update",<br>"text": "HTML content",<br>"kb_knowledge_base": "sys_id",<br>"workflow_state": "published"}
     S-->>J: Confirm Publication
+    deactivate J
 ```
 
 ---
@@ -259,3 +269,21 @@ sequenceDiagram
 - VS Code, Pandoc, GitHub, Jenkins streamline workflows.
 - Mermaid diagrams and css themes enhance clarity.
 - Let’s make documentation a team sport!
+
+```mermaid
+graph TD
+    A[Collaborative Documentation] -->|Enables| B[Longevity & LLM Integration]
+    A -->|Supports| C[Streamlined Workflows]
+    A -->|Enhances| D[Enhanced Clarity]
+    B --> E[Team Sport Outcome]
+    C --> E
+    D --> E
+    E -->|Drives| F[Project Success]
+    style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
+    style B fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
+    style C fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
+    style D fill:#2E8B57,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
+    style E fill:#20B2AA,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
+    style F fill:#20B2AA,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
+    style E-->F stroke:#20B2AA,stroke-width:4px
+```

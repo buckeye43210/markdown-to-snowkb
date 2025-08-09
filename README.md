@@ -9,7 +9,7 @@ fonttheme: professionalfonts
 ---
 
 ## Why Documentation Matters
-- Backbone of successful projects.
+- Good documentation backbone of successful projects.
 - Enables knowledge sharing, onboarding, maintenance.
 - Poor documentation causes confusion, inefficiency.
 - Collaboration ensures accuracy, relevance.
@@ -20,11 +20,12 @@ fonttheme: professionalfonts
 - Everyone contributes: developers, writers, consumers.
 - Collaborative tools streamline workflows.
 - Version control and automation boost efficiency.
-- Goal: Living, maintainable documentation.
+- Goal: Living, maintainable, up-to-date documentation.
 
 ---
 
 ## Workflow Overview
+- **Input**: Subject Matter Experts, feedback loops.
 - **Tools**: VS Code, Markdown, Mermaid, Pandoc, GitHub.
 - **Steps**: Write, preview, collaborate, convert, publish.
 - **Focus**: Simplicity, integration, longevity.
@@ -97,6 +98,27 @@ graph LR
 
 ```bash
 pandoc -F mermaid-filter -t html in.md -o out.html
+```
+
+```mermaid
+graph TD
+    A(Markdown/Mermaid)
+    A --> B(Pandoc)
+    B --> C(HTML)
+    B --> D(PDF)
+    B --> E(EPUB)
+    B --> F(LATEX)
+    B --> G(DOCX)
+    B --> H(PPT)
+    
+    style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
+    style B fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
+    style C fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
+    style D fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
+    style E fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
+    style F fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
+    style G fill:#2E8B57,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
+    style H fill:#20B2AA,stroke:#4682B4,stroke-width:2px,color:#FFFFFF    
 ```
 
 ---
@@ -197,7 +219,7 @@ clean:
     - **Checkout**: GitHub repo branch
     - **Build**: Run `make html`
     - **Publish**: POST JSON to ServiceNow API
-  - Store credentials in Jenkins Credentials Plugin.
+  - Store secrets in Jenkins Credentials Plugin.
 - **Alternative**: GitHub Actions (`make html` YAML workflow, API POST) -- not currently enabled.
 
 ---

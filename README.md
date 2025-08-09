@@ -9,9 +9,9 @@ fonttheme: professionalfonts
 ---
 
 ## Why Documentation Matters
-- Good documentation backbone of successful projects.
+- Good documentation; the backbone of successful projects.
 - Enables knowledge sharing, onboarding, maintenance.
-- Poor documentation causes confusion, inefficiency.
+- Poor documentation results in confusion, inefficiency.
 - Collaboration ensures accuracy, relevance.
 
 ---
@@ -28,7 +28,7 @@ fonttheme: professionalfonts
 - **Input**: Subject Matter Experts, feedback loops.
 - **Tools**: VS Code, Markdown, Mermaid, Pandoc, GitHub.
 - **Steps**: Write, preview, collaborate, convert, publish.
-- **Focus**: Simplicity, integration, longevity.
+- **Focus**: On simplicity, structure, integration, longevity.
 
 ---
 
@@ -168,74 +168,42 @@ graph LR
 
 ## Step 5: Automate Conversion with Makefile
 - Automates conversions, Git operations.
-- Tasks: PDF, HTML, EPUB; push; clean.
-- Commands: `make all`, `make pdf`, `make html`, `make epub`, `make push`, `make clean`.
+- Tasks: all, html, push.
+- Commands: `make all`, `make html`, `make push`.
 
 ```makefile
-.PHONY: all pdf epub html push clean check-mermaid
+.PHONY: all html push
 
-all: pdf html epub
+all: pdf push
 
-check-mermaid:
-	@command -v pandoc-mermaid-filter >/dev/null ||   \
-    { echo "Error: mermaid-filter not installed.      \
-    Run 'npm i -g mermaid-filter'"; exit 1; }
-```
-
----
-
-```makefile
-check-mermaid: (cont)
-	@command -v mmdc >/dev/null ||                    \
-    { echo "Error: mermaid-cli not installed.         \
-    Run 'npm i -g @mermaid-js/mermaid-cli'"; exit 1; }
-
-pdf: check-mermaid
-	pandoc -F mermaid-filter -t pdf in.md -o out.pdf  \
-    --pdf-engine=pdflatex
-
-html: check-mermaid
+html: 
 	pandoc -F mermaid-filter -s --css=styles.css      \
     in.md -o in.html
-```
-
----
-
-
-```makefile
-epub: check-mermaid
-	mmdc -i in.md -o temp.md --config mermaid.json
-	pandoc temp.md -o out.epub
-	rm temp.md
 
 push:
 	git commit -m "Update docs" -a && git push
-
-clean:
-	rm -f *.pdf *.html *.epub temp.md
 ```
 
 ---
 
 ## Step 6: Publish to ServiceNow KB
 - **Manual**: Paste HTML into SNOW KB editor, update, preview, upload images, submit.
-- **Automatic (Jenkins CI/CD)**:
-  - Pipeline:
-    - **Checkout**: GitHub repo branch
-    - **Build**: Run `make html`
-    - **Publish**: POST JSON to ServiceNow API
-  - Store secrets in Jenkins Credentials Plugin.
+- **Automatic**: Jenkins CI/CD Pipeline:
+  - **Checkout**: GitHub repo branch
+  - **Build**: Run `make html`
+  - **Publish**: POST JSON to ServiceNow API
+  - **Secrets**: Stored in Jenkins Credentials Plugin.
 - **Alternative**: GitHub Actions (`make html` YAML workflow, API POST) -- not currently enabled.
 
 ---
 
-## Sequence Diagram
+## CI/CD Sequence Diagram
 
 ```mermaid
 sequenceDiagram
     participant J as Jenkins
     participant C as Jenkins Credentials
-    participant S as ServiceNow API
+    participant S as SNOW KB API
     activate J
     J->>C: Fetch Credentials
     Note left of J: Uses Jenkins Credentials Plugin

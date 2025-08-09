@@ -119,13 +119,15 @@ pandoc -F mermaid-filter -t html in.md -o out.html
 
 ```mermaid
 graph LR
-    A[Edit Markdown] --> B[Push to Branch]
-    B --> C[Create Pull Request]
-    C --> D[Team Review]
+    A(Edit Markdown)
+    A --> B(Push to Branch)
+    B --> C(Create Pull Request)
+    C --> D(Team Review)
     D --> E{Approved?}
-    E -->|Yes| F[Merge to Main]
+    E -->|Yes| F(Merge to Main)
     E -->|No| A
-    F --> G[Publish]
+    F --> G(Publish)
+    
     style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
     style B fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
     style C fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
@@ -189,10 +191,10 @@ clean:
 ---
 
 ## Step 6: Publish to ServiceNow KB
-- **Manual**: Paste HTML into ServiceNow KB editor, update, preview, upload images, submit.
+- **Manual**: Paste HTML into SNOW KB editor, update, preview, upload images, submit.
 - **Automatic (Jenkins CI/CD)**:
   - Pipeline:
-    - **Checkout**: Checkout repo
+    - **Checkout**: GitHub repo branch
     - **Build**: Run `make html`
     - **Publish**: POST JSON to ServiceNow API
   - Store credentials in Jenkins Credentials Plugin.
@@ -206,7 +208,7 @@ clean:
 sequenceDiagram
     participant J as Jenkins
     participant C as Jenkins Credentials
-    participant S as ServiceNow API
+    participant S as SNOW API
     J->>C: Fetch Credentials
     C-->>J: Return Credentials
     J->>J: Run `make html`

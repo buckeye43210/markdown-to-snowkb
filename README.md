@@ -248,7 +248,7 @@ graph TD
     A -->|Supports| C
     A -->|Enhances| D
     B -->|Adds Stability| E
-    C -->|Dedrease Toil| E
+    C -->|Increased Efficiency| E
     D -->|Reduces Confusion| E
     E -->|Drives| F
     
@@ -264,8 +264,8 @@ graph TD
 
 ## Conclusion
 
-- Collaborative documentation drives success.
-- Markdown ensures longevity, LLM integration.
+- Collaborative Documentation drives success.
+- Markdown ensures longevity, good LLM integration.
 - VS Code, Pandoc, GitHub, Jenkins streamline workflows.
 - Mermaid diagrams and CSS themes enhance clarity.
 - Let’s make documentation a team sport!

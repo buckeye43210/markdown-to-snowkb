@@ -47,13 +47,13 @@ fonttheme: professionalfonts
 
 ```mermaid
 graph TD
-    A(Legacy Formats)          --> B[Long-Term Readability]
-    C[LLM: Generate Markdown]  --> D[AI-Enhanced Editing]
-    E[GitHub: Render Markdown] --> F[Collaborative Review]
-    B --> G[Modern Markdown Use]
+    A(Legacy Formats)          --> B(Long-Term Readability)
+    C(LLM: Generate Markdown)  --> D(AI-Enhanced Editing)
+    E(GitHub: Render Markdown) --> F(Collaborative Review)
+    B --> G(Modern Markdown Use)
     D --> G
     F --> G
-    G --> H[Publish Early, Publish Often]
+    G --> H(Publish Early, Publish Often)
     H --> H
     
     style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
@@ -68,7 +68,7 @@ graph TD
 
 ---
 
-## Step 1: Write in VS Code
+## Step 1: Create Content in VS Code
 - Use VS Code with Markdown Preview Mermaid Support.
 - Write Markdown for simplicity.
 - Add Mermaid diagrams for workflows.
@@ -77,9 +77,10 @@ graph TD
 
 ```mermaid
 graph LR
-    A[Write Markdown] --> B[Add Mermaid Diagrams]
-    B --> C[Preview in VS Code]
-    C --> D[Commit to GitHub]
+    A(Write Markdown) --> B(Add Mermaid Diagrams)
+    B --> C(Preview in VS Code)
+    C --> D(Commit to GitHub)
+
     style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
     style B fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
     style C fill:#20B2AA,stroke:#4682B4,stroke-width:2px,color:#FFFFFF

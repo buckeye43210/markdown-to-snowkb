@@ -61,8 +61,7 @@ graph TD
 ------
 
 ## The Process
-
-Step 1: Write VS Code using Markdown
+1. Write VS Code using Markdown
 
 - Use VS Code with the preview plugin.
 - Write documentation in Markdown for simplicity.
@@ -80,7 +79,7 @@ graph LR
 
 ------
 
-Step 2: Convert Markdown with Pandoc
+1. Convert Markdown with Pandoc
 
 - Pandoc converts Markdown to HTML, PDF, etc.
 - Use mermaid-filter to render Mermaid diagrams.
@@ -97,7 +96,7 @@ Step 3: Styling with CSS from .docx
 
 ------
 
-Step 4: Collaboration with GitHub
+1. Collaboration with GitHub
 
 - Host Markdown files in a GitHub repository.
 - Use pull requests for team reviews and edits.
@@ -119,40 +118,7 @@ graph LR
 
 ------
 
-Step 5: Manual ServiceNow KB Publishing
-
-- Open ServiceNow KB Article in HTML Edit Mode
-- Paste HTML article contents into HTML editor
-- Click Update
-- Preview SNOW KB Article
-- Upload Images and Submit for Review
-
-Step 6: Automatic ServiceNow KB Publishing
-
-- Use ServiceNow Knowledge Base API to publish documentation.
-- Automate content updates with Makefiles and scripts.
-- Store API credentials securely in KeePass.
-- Ensure documentation is accessible to stakeholders.
-- This would be much easier with GitHub Actions
-
-------
-
-### ServiceNow API Integration
-
-```mermaid
-sequenceDiagram
-    participant A as Makefile
-    participant B as KeePass
-    participant C as ServiceNow API
-    A->>B: Retrieve Credentials
-    B-->>A: Return Credentials
-    A->>C: POST Markdown Content
-    C-->>A: Confirm Publication
-```
-
-------
-
-Step 7: Automating with Makefile
+1. Automating with Makefile
 
 - Create a Makefile to automate conversions.
 - Example tasks: Convert Markdown to HTML/PDF, push to GitHub, etc.
@@ -170,6 +136,50 @@ push:
     git commit -m "my change message" -a && git push
 ```
 
+Use `
+
+------
+
+
+1. Publish to ServiceNow KB
+
+- **Manual**: Paste HTML into ServiceNow KB HTML editor, update, preview, upload images, submit for review.
+
+- **Automatic (Jenkins CI/CD)**:
+
+    - Jenkins pipeline: Check out GitHub repo, convert Markdown to HTML (make html), publish to ServiceNow KB via API.
+    - Store API credentials in Jenkins Credentials Plugin.
+    - Stages: Checkout, Build (Pandoc), Publish (ServiceNow API).
+
+- **Alternative** Use GitHub Actions if enabled
+
+------
+
+
+```mermaid
+sequenceDiagram
+    participant J as Jenkins
+    participant C as Jenkins Credentials
+    participant S as ServiceNow API
+    J->>C: Fetch ServiceNow Credentials
+    C-->>J: Return Credentials
+    J->>J: Run `make html`
+    J->>S: POST HTML Content
+    S-->>J: Confirm Publication
+```
+
+------
+
+## Next Steps
+
+### Create Proof of Concept
+
+- Use ServiceNow Knowledge Base API to publish documentation.
+- Automate content updates with Jenkins CI/CD.
+- Store API credentials securely in Jenkins.
+- Ensure documentation is accessible to stakeholders.
+- **Perm** Decision Tree Builder for domumentation indexing.
+
 ------
 
 ## Conclusion
@@ -178,5 +188,7 @@ push:
 - Use Markdown for longevity, LLM integration, image and diagram integration.
 - VS Code, Pandoc, GitHub, and Make streamline the process.
 - Mermaid diagrams add clarity and engagement.
-- Let's make documentation a team sport together!
+- Together, we can make documentation a team sport!
+
+
 

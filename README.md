@@ -272,18 +272,17 @@ sequenceDiagram
 
 ```mermaid
 graph TD
-    A[Collaborative Documentation] -->|Enables| B[Longevity & LLM Integration]
-    A -->|Supports| C[Streamlined Workflows]
-    A -->|Enhances| D[Enhanced Clarity]
-    B --> E[Team Sport Outcome]
-    C --> E
-    D --> E
-    E -->|Drives| F[Project Success]
+    A[Collaborative Documentation]
+    A -->|Enables|        B[Longevity]
+    A -->|Supports|       C[Streamlined Workflows]
+    A -->|Enhances|       D[Clarity]
+    B -->|Aids Stability| E[Project Success]
+    C -->|Contributes To| E
+    D -->|Drives|         E
+    
     style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
     style B fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
     style C fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
     style D fill:#2E8B57,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
     style E fill:#20B2AA,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
-    style F fill:#20B2AA,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
-    style E-->F stroke:#20B2AA,stroke-width:4px
 ```

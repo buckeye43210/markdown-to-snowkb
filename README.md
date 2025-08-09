@@ -1,6 +1,6 @@
 ---
 title: "Documentation: A Team Sport"
-subtitle: "Collaborative Environments For Document Creation"
+subtitle: "A Collaborative Environment For Document Publication"
 author: Rick Holbert
 date: 13 August 2025
 theme: PaloAlto
@@ -33,14 +33,14 @@ fonttheme: professionalfonts
 ---
 
 ## Benefits of Markdown
-- **Longevity**: Lightweight, durable.
-    - Roff (1970s), \LaTeX (1984), Postscript (1982).
-- **LLM Integration**: LLM suggestions.
+- **Longevity**: Markup languages are lightweight, durable.
+    - Runoff (1960s), Postscript (1982), \LaTeX (1984)
+- **LLM Integration**: LLM suggestions, editor plugins.
 - **GitHub Rendering**: Native Markdown/Mermaid support.
 - **Fewer Distractions**: Focus on pure essense of document.
     - **WYSIWYG** vs **WYSIWYM**
 - **Attributes**: Structured, portable, future-proof.
-- **History**: Word processors fade; Markdown endures.
+- **History**: Word processors fade; Markup languages endure.
 
 ---
 

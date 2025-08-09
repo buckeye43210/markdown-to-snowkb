@@ -44,7 +44,7 @@ fonttheme: professionalfonts
 
 ---
 
-## Markdown Benefits Workflow
+## Markdown Benefits Diagram
 
 ```mermaid
 graph TD
@@ -70,12 +70,6 @@ graph TD
 ---
 
 ## Step 1: Create Content in VS Code
-- Use VS Code with Markdown Preview Mermaid Support.
-- Write Markdown for simplicity.
-- Add Mermaid diagrams for workflows.
-- Paste Clipboard images.
-- Preview diagrams and images in real-time.
-
 ```mermaid
 graph LR
     A(Write Markdown) --> B(Add Mermaid Diagrams)
@@ -86,20 +80,18 @@ graph LR
     style B fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
     style C fill:#20B2AA,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
     style D fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
-```    
+```
+
+- Use VS Code with Markdown Preview Mermaid Support.
+- Write Markdown for simplicity.
+- Add Mermaid diagrams for workflows.
+- Paste Clipboard images.
+- Preview diagrams and images in real-time.
+
 
 ---
 
 ## Step 2: Pandoc Conversion Tool
-- Renders Markdown to HTML, PDF, EPUB, etc.
-- Uses `mermaid-filter` for diagram rendering.
-- Set metadata values via YAML in document header.
-- Example Command:
-
-```bash
-pandoc -F mermaid-filter -t html in.md -o out.html
-```
-
 ```mermaid
 graph TD
     A(Markdown/Mermaid)
@@ -119,6 +111,14 @@ graph TD
     style F fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
     style G fill:#2E8B57,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
     style H fill:#20B2AA,stroke:#4682B4,stroke-width:2px,color:#FFFFFF    
+```
+- Renders Markdown to HTML, PDF, EPUB, etc.
+- Uses `mermaid-filter` for diagram rendering.
+- Set metadata values via YAML in document header.
+- Example Command:
+
+```bash
+pandoc -F mermaid-filter -t html in.md -o out.html
 ```
 
 ---

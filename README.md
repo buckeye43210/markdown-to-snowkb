@@ -69,23 +69,23 @@ graph TD
 
 ---
 
-## Available Mermaid Diagram Types
+## Sample Mermaid Diagram Types
 
-- Sequence Diagram - Actors/object interaction over time.
+- Sequence Diagram - Actor/Object interaction over time.
 - Gantt Chart - Represents project schedules and tasks.
 - Flowchart - Visualizes processes or workflows.
 - Class Diagram - Models class structures and relationships.
 - State Diagram - Represents state machines.
-- Entity-Relationship Diagram (ERD) - Database entity relationships.
+- Entity-Relationship Diagram - Database relationships.
 - User Journey Diagram - User interactions and experiences.
 - Mindmap - Displays hierarchical information.
 - Timeline - Shows events in chronological order.
-- Requirement Diagram - System requirements/relationships.
+- Requirement Diagram - System requirements.
 - Git Graph - Visualizes Git repository commit history.
 - Pie Chart - Shows data in a circular, proportional format.
 - Quadrant Chart - Compares data in four quadrants.
 - Sankey Diagram - Shows flow magnitudes between nodes.
-- Block Diagram - System components and their interactions.
+- Block Diagram - System component interactions.
 - C4 Diagram - Models software architecture.
 
 ---
@@ -105,8 +105,8 @@ graph LR
 
 - Use VS Code with Markdown Preview Mermaid Support.
 - Write Markdown for simplicity.
-- Add Mermaid diagrams for workflows.
-- Paste Clipboard images.
+- Add Mermaid diagrams for workflows, etc.
+- Paste screenshots from clipboard.
 - Preview diagrams and images in real-time.
 
 

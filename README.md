@@ -251,6 +251,7 @@ sequenceDiagram
 ---
 
 ## Next Steps
+
 - **Proof of Concept**: Automate publishing with Jenkins.
 - **GitHub Actions**: Request enablement for simpler CI/CD.
 - **Expand LLM Use**:
@@ -263,26 +264,40 @@ sequenceDiagram
 
 ---
 
-## Conclusion
-- Collaborative documentation drives success.
-- Markdown ensures longevity, LLM integration.
-- VS Code, Pandoc, GitHub, Jenkins streamline workflows.
-- Mermaid diagrams and css themes enhance clarity.
-- Let’s make documentation a team sport!
+
+## Summary
 
 ```mermaid
 graph TD
-    A[Collaborative Documentation]
-    A -->|Enables|        B[Longevity]
-    A -->|Supports|       C[Streamlined Workflows]
-    A -->|Enhances|       D[Clarity]
-    B -->|Aids Stability| E[Project Success]
-    C -->|Contributes To| E
-    D -->|Drives|         E
+    A(Collaborative Documentation)
+    B(Longevity)
+    C(Streamlined Workflows)
+    D(Clarity)
+    E(Team Sport Mentality)
+    F(Project Success)
+
+    A -->|Enables| B
+    A -->|Supports| C
+    A -->|Enhances| D
+    B -->|Adds Stability| E
+    C -->|Dedrease Toil| E
+    D -->|Reduces Confusion| E
+    E -->|Drives| F
     
     style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
     style B fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
     style C fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
     style D fill:#2E8B57,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
     style E fill:#20B2AA,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
+    style F fill:#20B2AA,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
 ```
+
+---
+
+## Conclusion
+
+- Collaborative documentation drives success.
+- Markdown ensures longevity, LLM integration.
+- VS Code, Pandoc, GitHub, Jenkins streamline workflows.
+- Mermaid diagrams and CSS themes enhance clarity.
+- Let’s make documentation a team sport!

@@ -107,6 +107,7 @@ graph LR
 - Write Markdown for simplicity.
 - Add Mermaid diagrams for workflows, etc.
 - Paste screenshots from clipboard.
+- Add other bitmap images by reference.
 - Preview diagrams and images in real-time.
 
 

@@ -1,9 +1,8 @@
-```markdown
 ---
 title: "Documentation: A Team Sport"
 subtitle: "Collaborative Environment for Document Publication"
 author: "Rick Holbert"
-date: "August 10, 2025"
+date: \today
 theme: "PaloAlto"
 colortheme: "whale"
 fonttheme: "professionalfonts"
@@ -24,6 +23,11 @@ header-includes:
 - Life Cycle
 - Team Sport Mindset
 - Workflow Tools
+
+---
+
+# Overview (cont)
+
 - Markdown Authoring
 - Mermaid Diagrams
 - VS Code Editing
@@ -496,4 +500,3 @@ graph TD
 - Tools: Markdown, Mermaid, Git, Pandoc, Automation.
 
 **Action**: Invest early in collab docs – save time, empower teams.
-```

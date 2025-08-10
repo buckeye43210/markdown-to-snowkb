@@ -182,15 +182,17 @@ graph LR
 
 # Why Print-Centric Tools Fail
 - Word was designed in the 1980s for **physical documents**.
-- Features like margins, page breaks irrelevant for digital content.
-- Web-specific needs (e.g., mobile responsiveness, machine-readability) poorly supported.
+- Margins, page breaks, etc. irrelevant for digital content.
+- Web-specific needs:
+    - Mobile responsiveness
+    - Machine-readability (poorly supported)
 - Proprietary formats (e.g., .docx) lock content in complex, restrictive structures.
 
 ---
 
 # Collaboration Challenges
 
-Common issues with traditional collaboration:
+## Common issues with traditional collaboration:
 
 - Confusing file names (e.g., `foo-document_2012_10_15_final2.doc`).
 - No clear version history or change context.
@@ -203,6 +205,7 @@ Common issues with traditional collaboration:
 ---
 
 # Solution: Version Control
+
 - Invented in the 1970s, widely used by developers.
 - Tracks every change down to the character.
 - Maintains master copy, supports transparent discussions.
@@ -212,6 +215,7 @@ Common issues with traditional collaboration:
 ---
 
 # Breaking Free from Proprietary Formats
+
 - Proprietary formats (e.g., .docx) mix content with formatting instructions.
 - Result: Complex, restrictive files that require specific software.
 - Analogy: Getting water by filtering Coke through a Brita filter.
@@ -219,14 +223,13 @@ Common issues with traditional collaboration:
 
 ---
 
-# A Web-First Workflow
-
+# Web-First Workflow
 
 ~~~mermaid
 graph LR
     A(Use Markdown for content creation)
     A --> B(Adopt Git and GitHub for collaboration)
-    B --> C(Use tools: GitHub, VS Code)
+    B --> C(Use tools: VS Code, GitHub)
     C --> D(Create repository and collaborate)
 
     classDef markdown fill:#f9e79f,stroke:#333,stroke-width:2px;
@@ -240,7 +243,7 @@ graph LR
     class D repo;
 ~~~  
 
-To create content for the web:
+## To create content for the web:
 
 1. Use **Markdown** for simple, text-based content creation.
 2. Adopt **Git** and platforms like **GitHub** for collaboration.
@@ -252,12 +255,15 @@ To create content for the web:
 ---
 
 # Conclusion: Stop Making Paper
+## Key Takeaways
+
 - Shift from print-first to **web-first** content creation.
 - Embrace modern tools for collaboration and version control.
 - Break the habit of using outdated, print-centric software.
 - Start today: Learn Markdown, use Git, and focus on **content**.
 
-**Credit**: Ben Balter, 2012 [We've been trained to make paper](https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/)nly distribution, the time is ripe for a more evolved, text-centric, distributed workflow to become mainstream. Stop making paper, start collaborating.
+**Credit**: Ben Balter, 2012 [We've been trained to make paper](https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/)
+only distribution, the time is ripe for a more evolved, text-centric, distributed workflow to become mainstream. Stop making paper, start collaborating.
 
 ---
 
@@ -327,8 +333,6 @@ graph TD
     class G operateStyle;
     class H monitorStyle;
 ~~~
-
-
 
 ---
 

@@ -296,8 +296,8 @@ push:
 
 ---
 
-## Step 6: Publish to SNOW KB
-- **Manual**:
+## Step 6: SNOW KB Publishing
+- **Manual**: Process Follows:
     - **Paste** HTML into SNOW KB editor
     - **Update**
     - **Preview**
@@ -386,4 +386,3 @@ graph TD
 - Mermaid Diagrams and CSS Themes Enhance Clarity.
 - Let’s Make Documentation A Team Sport!
 
----

@@ -257,10 +257,10 @@ push:
 
 ---
 
-## Step 6: Publish to ServiceNow KB
+## Step 6: Publish to SNOW KB
 - **Manual**:
     - **Paste** HTML into SNOW KB editor
-    - **Uupdate**
+    - **Update**
     - **Preview**
     - **Upload images**
     - **Submit** for review
@@ -301,11 +301,12 @@ sequenceDiagram
 - **GitHub Actions**: Request enablement for simpler CI/CD.
 - **Expand LLM Use**:
      - AI Auto-generated drafts.
-     - Documentation Taxonomy
+     - Documentation Taxonomy.
+     - CSS style improvements.
 - **Enhanced Indexing**:
     - Perm Decision Tree Builder and FreePlane.
-    - Categorize by topic, project, etc.
-    - Result: SNOW KB Mind Map Search Tree
+    - Categorize by topic, project, attributes, etc.
+    - Result: SNOW KB Mind Map Search Tree.
 
 ---
 
@@ -342,7 +343,7 @@ graph TD
 ## Conclusion
 
 - Collaborative Documentation drives success.
-- Markdown ensures longevity, good LLM integration.
+- Markdown ensures longevity, with LLM integration.
 - VS Code, Pandoc, GitHub, Jenkins streamline workflows.
 - Mermaid diagrams and CSS themes enhance clarity.
 - Let’s make documentation a team sport!

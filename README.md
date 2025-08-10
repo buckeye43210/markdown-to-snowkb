@@ -258,12 +258,15 @@ graph LR
 ## Key Takeaways
 
 - Shift from print-first to **web-first** content creation.
-- Embrace modern tools for collaboration and version control.
+- Embrace modern collaboration and version control tools.
 - Break the habit of using outdated, print-centric software.
-- Start today: Learn Markdown, use Git, and focus on **content**.
+- Stop making paper, Start collaborating.
+- Start today:
+    - Learn Markdown
+    - Use Git
+    - Focus on **content**.
 
 **Credit**: Ben Balter, 2012 [We've been trained to make paper](https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/)
-only distribution, the time is ripe for a more evolved, text-centric, distributed workflow to become mainstream. Stop making paper, start collaborating.
 
 ---
 

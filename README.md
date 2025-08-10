@@ -181,34 +181,39 @@ graph LR
 ---
 
 # Why Print-Centric Tools Fail
-- Microsoft Word was designed in the 1980s for **physical documents**.
-- Features like margins and page breaks are irrelevant for digital content.
-- Web-specific needs (e.g., mobile responsiveness, machine-readability) are poorly supported.
-- Proprietary formats (e.g., .doc) lock content in complex, inaccessible structures.
+- Word was designed in the 1980s for **physical documents**.
+- Features like margins, page breaks irrelevant for digital content.
+- Web-specific needs (e.g., mobile responsiveness, machine-readability) poorly supported.
+- Proprietary formats (e.g., .docx) lock content in complex, restrictive structures.
 
 ---
 
 # Collaboration Challenges
+
 Common issues with traditional collaboration:
+
 - Confusing file names (e.g., `foo-document_2012_10_15_final2.doc`).
-- No clear version history or context for changes.
-- Questions like: Who made this change? Was my edit accepted? Can we edit simultaneously?
+- No clear version history or change context.
+- Raises questions:
+    - Who made this change?
+    - Was my edit accepted?
+    - Can we edit simultaneously?
 - No easy way to experiment with parallel versions.
 
 ---
 
-# The Solution: Version Control
+# Solution: Version Control
 - Invented in the 1970s, widely used by developers.
 - Tracks every change down to the character.
-- Maintains a master copy and supports transparent discussions.
+- Maintains master copy and supports transparent discussions.
 - Enables parallel experimentation without conflicts.
-- Free and accessible tools like **Git** make it easy to adopt.
+- Free and accessible tools like **GitHub** make for easy adoption.
 
 ---
 
 # Breaking Free from Proprietary Formats
-- Proprietary formats (e.g., .doc) mix content with formatting instructions.
-- Result: Complex, inaccessible files that require specific software.
+- Proprietary formats (e.g., .docx) mix content with formatting instructions.
+- Result: Complex, restrictive files that require specific software.
 - Analogy: Getting water by filtering a can of Coke through a Brita.
 - Solution: Focus on **pure content** using open, text-based formats like **Markdown**.
 
@@ -219,7 +224,7 @@ To create content for the web:
 1. Use **Markdown** for simple, text-based content creation.
 2. Adopt **Git** and platforms like **GitHub** for collaboration.
 3. Tools to start:
-   - **GitHub CLI** for version control.
+   - **Git CLI** for version control.
    - **VS Code** for Markdown editing.
 4. Create a repository and collaborate seamlessly.
 
@@ -248,7 +253,7 @@ graph LR
 - Break the habit of using outdated, print-centric software.
 - Start today: Learn Markdown, use Git, and focus on **content**.
 
-**Credit**: Ben Balter, 2012 [](https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/)nly distribution, the time is ripe for a more evolved, text-centric, distributed workflow to become mainstream. Stop making paper, start collaborating.
+**Credit**: Ben Balter, 2012 [We've been trained to make paper](https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/)nly distribution, the time is ripe for a more evolved, text-centric, distributed workflow to become mainstream. Stop making paper, start collaborating.
 
 ---
 

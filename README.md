@@ -214,7 +214,7 @@ graph TD
 
 ---
 
-## What is Markdown?
+## What is Markdown? {#markdown}
 
 - Markdown: A lightweight markup language.
 - Decorate Text: Adds structure and formatting.
@@ -264,7 +264,7 @@ graph TD
 ~~~
 
 
-## What is Mermaid?
+## What is Mermaid? {#mermaid}
 
 - Mermaid is a Diagram Description Language.
 - Uses simple, text-based syntax.
@@ -354,7 +354,7 @@ graph LR
 
 ---
 
-## Step 2: Pandoc Conversion Tool
+## Step 2: Pandoc Conversion Tool {#pandoc}
 
 ~~~mermaid
 graph TD

@@ -225,7 +225,7 @@ pandoc -F mermaid-filter -t html in.md -o out.html
 
 ---
 
-## Step 3: Style with CSS
+## Step 3: CSS Styling
 - Create Word document with styles (fonts, colors).
 - Convert DOCX to HTML via Save As.
 - Extract CSS from HTML style section.

@@ -217,7 +217,12 @@ push:
 ---
 
 ## Step 6: Publish to ServiceNow KB
-- **Manual**: Paste HTML into SNOW KB editor, update, preview, upload images, submit.
+- **Manual**:
+    - **Paste** HTML into SNOW KB editor
+    - **Uupdate**
+    - **Preview**
+    - **Upload images**
+    - **Submit** for review
 - **Automatic**: Jenkins CI/CD Pipeline:
   - **Checkout**: GitHub repo branch
   - **Build**: Run `make html`
@@ -240,6 +245,7 @@ sequenceDiagram
     C-->>J: Return Credentials
     J->J: Run `make html`
     Note over J: Converts Markdown to HTML
+    Note over J: Renders Mermaid Diagrams
     J->>S: POST JSON Payload
     Note over J,S: {"short_description": "Documentation Update",<br>"text": "HTML content",<br>"kb_knowledge_base": "sys_id",<br>"workflow_state": "published"}
     S-->>J: Confirm Publication

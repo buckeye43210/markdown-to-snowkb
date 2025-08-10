@@ -251,7 +251,7 @@ pandoc -F mermaid-filter                           \
 
 ```mermaid
 graph LR
-    A(Edit Markdown)
+    A(Edit/Fix Markdown)
     A --> B(Push to Feature Branch)
     B --> C(Create Pull Request)
     C --> D(Team Review)

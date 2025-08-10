@@ -18,7 +18,8 @@ fonttheme: professionalfonts
 - Enhances User Experience
 - Best Practices
 - Key Takeaways
-- Suggested Tooling and Processes
+- Next Steps
+- Conclusion
 
 ---
 
@@ -86,17 +87,6 @@ Example: A wiki with contributions from developers, designers, and support ensur
 - **Regular Updates**: Treat documentation as a living resource, assign owners.
 - **Use Templates**: Standardize formats for consistency (e.g., READMEs, API docs).
 - **Test It**: Validate docs with new users for clarity and accuracy.
-
-
-## Key Takeaways
-
-- Documentation is a strategic asset for project success.
-- Enables knowledge sharing, onboarding, and maintenance.
-- Poor documentation causes confusion and inefficiency.
-- Collaboration ensures accuracy and relevance.
-- Enhances user experience and product adoption.
-
-**Call to Action**: Invest in documentation early and collaboratively to save time, reduce costs, and empower your team and users.
 
 ---
 
@@ -415,6 +405,17 @@ sequenceDiagram
     S-->>J: Confirm Publication
     deactivate J
 ```
+
+---
+## Key Takeaways
+
+- Documentation is a strategic asset for project success.
+- Enables knowledge sharing, onboarding, and maintenance.
+- Poor documentation causes confusion and inefficiency.
+- Collaboration ensures accuracy and relevance.
+- Enhances user experience and product adoption.
+
+**Call to Action**: Invest in documentation early and collaboratively to save time, reduce costs, and empower your team and users.
 
 ---
 

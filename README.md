@@ -133,8 +133,8 @@ mindmap
       Portable
       Platform Agnostic
       Use any text editor
-    Diagrams in Markdown
-      Embedded diagrams rendered into graphics
+    Embed Diagrams in Markdown
+      Diagrams rendered into graphics
       Rendered SVG supports click links
     Widely Adopted
       Lucid

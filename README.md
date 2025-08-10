@@ -173,7 +173,7 @@ graph LR
     A(Write Markdown) --> B(Add Mermaid Diagrams)
     B --> C(Preview in VS Code)
     C --> D(Commit Changes)
-    D --> A
+    D -->|Lather, Rinse and Repeat| A
 
     style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
     style B fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px

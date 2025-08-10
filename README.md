@@ -92,9 +92,12 @@ header-includes:
 **Example**:
 
 ~~~mermaid
-graph TD
-    A[Architecture Knowledge] -->|Solo| B[Bus Factor 1] --> C[High Vulnerability]
-    A -->|Documented & Shared| D[Higher Bus Factor] --> E[Resilience]
+graph LR
+    A[Architecture Knowledge)
+    A -->|Solo| B(Bus Factor 1)
+    B --> C(High Vulnerability)
+    A -->|Documented & Shared| D(Increased Bus Factor)
+    D --> E(Resilience)
 
     classDef neutral fill:#f9e79f,stroke:#333,stroke-width:2px;
     classDef low fill:#f5b7b1,stroke:#333,stroke-width:2px;
@@ -131,7 +134,7 @@ Legacy process:
 **Issue**: Print-first; web retrofit.
 
 ```mermaid
-graph TD
+graph LR
     A[Draft in Word] --> B[Share email/folder]
     B --> C[Reconcile changes]
     C -->|Repeat| C
@@ -177,7 +180,7 @@ Web-first flow:
 4. Repo: Create, collaborate.
 
 ```mermaid
-graph TD
+graph LR
     A[Markdown content] --> B[Git/GitHub collab]
     B --> C[VS Code/Git CLI tools]
     C --> D[Repo create/collaborate]
@@ -293,14 +296,15 @@ graph TD
 
 ```mermaid
 graph TD
-    A[Markup Formats] --> B[Long-Term Readability]
-    C[LLM Generate] --> D[AI Editing]
+    A[Markup Formats]
+    A --> B[Long-Term Readability]
+    C[LLM Generate]  --> D[AI Editing]
     E[GitHub Render] --> F[Collab Review]
     B --> G[Modern Use]
     D --> G
     F --> G
     G --> H[Pandoc/Mermaid/CI/CD]
-    H --> I[Publish Often]
+    H --> I[Publish Early And Often]
 
     style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
     style B fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
@@ -488,7 +492,8 @@ sequenceDiagram
 
 ```mermaid
 graph TD
-    A[Collab Docs] --> B[Longevity]
+    A[Collab Docs]
+    A --> B[Longevity]
     A --> C[Workflows]
     A --> D[Clarity]
     B --> E[Team Mentality]

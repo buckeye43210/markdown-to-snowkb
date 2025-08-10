@@ -132,35 +132,29 @@ or other reasons. It underscores the importance of documentation and knowledge s
 
 ---
 
-# The Problem with Traditional Workflows {#paper-problem00} 
+# Problem with Traditional Workflows {#paper-problem00} 
 - Trained to create content for **paper**, not the web.
 - Traditional tools prioritize print-centric features:
   - Margins, page breaks, and physical layout.
   - Limited support for web features like hyperlinks or mobile responsiveness.
-- Most documents today are consumed digitally, not physically.
+- Most documents are consumed digitally, not physically.
 
 ---
 
 # Problem (cont) {#paper-problem01}
 
-## A Broken Collaborative Process
+## Broken Collaborative Process
 
 Typical document collaboration workflow:
 
-1. Draft in Microsoft Word.
-2. Share via email or shared folder.
-3. Manually reconcile changes.
-4. Repeat until finalized.
-5. Convert to web-friendly format.
-6. Publish.
-
 ~~~mermaid
 graph LR
-    A[Draft in Microsoft Word] --> B[Share via email attachment or shared folder]
-    B --> C[Manually reconcile changes]
-    C -->|Repeat until finalized| C
-    C --> D[Convert to web-friendly format]
-    D --> E[Publish]
+    A(Edit in Word)
+    A --> B(Share via email attachment or shared folder)
+    B --> C(Manually reconcile changes)
+    C -->|Repeat until finalized| A
+    C --> D(Convert to web-friendly format)
+    D --> E(Publish)
 
     classDef draft fill:#f9e79f,stroke:#333,stroke-width:2px;
     classDef share fill:#a9dfbf,stroke:#333,stroke-width:2px;
@@ -175,7 +169,14 @@ graph LR
     class E publish;
 ~~~
 
-**Problem**: Content is prepared for print, then retrofitted for the web.
+1. Edit in Microsoft Word.
+2. Share via email attachment or shared folder.
+3. Manually reconcile changes.
+4. Repeat until finalized.
+5. Convert to web-friendly format.
+6. Publish.
+
+**Problem**: Content prepared for print, then retrofitted for web.
 
 ---
 

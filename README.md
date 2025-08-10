@@ -509,5 +509,5 @@ and the project is less vulnerable.
 
 ### Why It Matters
 A low bus factor can lead to delays, increased costs, or project failure when key individuals are unavailable due to illness, departure, or other reasons.
-It underscores the importance of documentation and knowledge sharing, as highlighted in your presentation slides, to ensure project continuity and resilience.
+It underscores the importance of documentation and knowledge sharing, as highlighted in this presentation, to ensure project continuity and resilience.
 

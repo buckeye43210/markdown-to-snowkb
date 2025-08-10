@@ -133,6 +133,7 @@ mindmap
       Portable
       Platform Agnostic
       Use any text editor
+      Future-Proof
     Embed Diagrams in Markdown
       Diagrams rendered into graphics
       Rendered SVG supports click links

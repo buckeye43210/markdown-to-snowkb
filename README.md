@@ -172,7 +172,7 @@ mindmap
 graph LR
     A(Write Markdown) --> B(Add Mermaid Diagrams)
     B --> C(Preview in VS Code)
-    C --> D(Commit to GitHub)
+    C --> D(Commit to Changes)
     D --> A
 
     style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF

@@ -10,7 +10,7 @@ header-includes:
   - \usepackage{hyperref}
 ---
 
-# Overview
+## Overview
 
 - Backbone of Projects
 - Knowledge Sharing
@@ -26,7 +26,7 @@ header-includes:
 
 ---
 
-# Overview (cont)
+## Overview (cont)
 
 - Markdown Authoring
 - Mermaid Diagrams
@@ -42,7 +42,7 @@ header-includes:
 
 ---
 
-# Documentation: Backbone of Success
+## Documentation: Backbone of Success
 
 - Clarity: Aligns team on goals, processes, tech details.
 - Scalability: Guides new contributors as projects grow.
@@ -53,7 +53,7 @@ header-includes:
 
 ---
 
-# Knowledge Sharing & Onboarding
+## Knowledge Sharing & Onboarding
 
 - Democratizes info: Reduces expert dependency.
 - Speeds onboarding: Quick grasp of workflows/tools.
@@ -64,7 +64,7 @@ header-includes:
 
 ---
 
-# Pitfalls of Poor Documentation
+## Pitfalls of Poor Documentation
 
 - Confusion: Leads to errors, miscommunication.
 - Inefficiency: Time wasted reverse-engineering.
@@ -75,7 +75,7 @@ header-includes:
 
 ---
 
-# Bus Factor Defined
+## Bus Factor Defined
 
 - Measure: Key individuals whose absence stalls project.
 - Low (1-2): High risk, concentrated knowledge.
@@ -91,9 +91,9 @@ header-includes:
 
 **Example**:
 
-~~~mermaid
+```mermaid
 graph LR
-    A[Architecture Knowledge)
+    A(Architecture Knowledge)
     A -->|Solo| B(Bus Factor 1)
     B --> C(High Vulnerability)
     A -->|Documented & Shared| D(Increased Bus Factor)
@@ -106,11 +106,11 @@ graph LR
     class A neutral;
     class B,C low;
     class D,E high;
-~~~
+```
 
 ---
 
-# We've Been Trained for Paper
+## We've Been Trained for Paper
 
 **Credit**: Ben Balter (2012)  
 **Source**: [We've been trained to make paper/](https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/)
@@ -121,9 +121,10 @@ graph LR
 
 ---
 
-# Flawed Workflow in Paper Tools
+## Flawed Workflow in Paper Tools
 
-Legacy process:
+### Legacy process:
+
 1. Draft in Word.
 2. Share email/folder.
 3. Reconcile manually.
@@ -135,11 +136,12 @@ Legacy process:
 
 ```mermaid
 graph LR
-    A[Draft in Word] --> B[Share email/folder]
-    B --> C[Reconcile changes]
+    A(Draft in Word)
+    A --> B(Share email/folder)
+    B --> C(Reconcile changes)
     C -->|Repeat| C
-    C --> D[Convert web]
-    D --> E[Publish]
+    C --> D(Convert web)
+    D --> E(Publish)
 
     classDef draft fill:#f9e79f,stroke:#333,stroke-width:2px;
     classDef share fill:#a9dfbf,stroke:#333,stroke-width:2px;
@@ -156,24 +158,28 @@ graph LR
 
 ---
 
-# Why Print Tools Fail Technically
+## Why Print Tools Fail Technically
 
-- Word: Physical focus; ignores web (responsiveness, readability).
-- Proprietary (.docx): Mixes content/formatting; software-locked.
+- Word: Physical focus; web a second thought.
+- Complex (.docx): Mixes content/formatting.
 - Analogy: Water from filtered Coke – inefficient.
 
+Show Word "Hello World" XML vs Markdown "Hello World" code blocks.
+
 **Challenges**:
+
 - File chaos: `doc_2012_final2.docx`.
 - No history: Unclear edits, no simultaneous work, no branches.
 
 ---
 
-# Solution: Version Control & Web-First
+## Solution: Version Control & Web-First
 
-- Git: 1970s origin; tracks changes (character-level), branches, discussions.
+- Git: (2005) tracks changes (character-level), branches, discussions.
 - Free, dev-standard.
 
 Web-first flow:
+
 1. Markdown: Text-based content.
 2. Git/GitHub: Collab, control.
 3. Tools: VS Code (edit), Git CLI.
@@ -181,9 +187,9 @@ Web-first flow:
 
 ```mermaid
 graph LR
-    A[Markdown content] --> B[Git/GitHub collab]
-    B --> C[VS Code/Git CLI tools]
-    C --> D[Repo create/collaborate]
+    A(Markdown content) --> B(Git/GitHub collab)
+    B --> C(VS Code/Git CLI tools)
+    C --> D(Repo create/collaborate)
 
     classDef markdown fill:#f9e79f,stroke:#333,stroke-width:2px;
     classDef git fill:#a9dfbf,stroke:#333,stroke-width:2px;
@@ -203,7 +209,7 @@ graph LR
 
 ---
 
-# Collaboration Benefits
+## Collaboration Benefits
 
 - Accuracy: Multi-perspectives catch gaps.
 - Relevance: Tailors for devs/users.
@@ -214,18 +220,18 @@ graph LR
 
 ---
 
-# User Experience Enhancement
+## User Experience Enhancement
 
 - Empowers: Self-service guides cut support.
 - Trust: Pro docs reflect quality.
 - Reduces errors: Intuitive instructions.
 - Adoption: Easy learning boosts uptake.
 
-**Tech Example**: Tool manual slashes tickets.
+**Example**: SOP slashes ticket count.
 
 ---
 
-# Best Practices
+## Best Practices
 
 - Concise: Simple language, visuals.
 - Organized: Logical structure, searchable.
@@ -235,17 +241,17 @@ graph LR
 
 ---
 
-# Documentation Life Cycle
+## Documentation Life Cycle
 
 ```mermaid
 graph TD
-    A[Plan: Requirements/specs] --> B[Code: Code/APIs]
-    B --> C[Build: Processes]
-    C --> D[Test: Cases/results]
-    D --> E[Release: Notes]
-    E --> F[Deploy: Steps]
-    F --> G[Operate: Runbooks]
-    G --> H[Monitor: Metrics/incidents]
+    A(Plan: Requirements/specs) --> B(Code: Code/APIs)
+    B --> C(Build: Processes)
+    C --> D(Test: Cases/results)
+    D --> E(Release: Notes)
+    E --> F(Deploy: Steps)
+    F --> G(Operate: Runbooks)
+    G --> H(Monitor: Metrics/incidents)
     H --> A
 
     classDef plan fill:#FFD700,stroke:#333,stroke-width:2px;
@@ -269,42 +275,40 @@ graph TD
 
 ---
 
-# Team Sport Mindset
+## Team Sport Mindset
 
 - All contribute: Devs, writers, users.
-- Tools: Streamline collab.
+- Tools: Streamline collaboration.
 - Versioning/Automation: Efficiency.
 - Goal: Living, maintainable docs.
 
 ---
 
-# Workflow Overview
+## Workflow Overview
 
 - Input: SMEs, feedback.
 - Tools: VS Code, Markdown, Mermaid, Pandoc, GitHub.
-- Steps: Write, preview, collab, convert, publish.
+- Steps: Write, preview, collaborate, convert, publish.
 - Focus: Simplicity, integration, CI/CD.
 
 ---
 
-# Markdown: Core Authoring
+## Markdown: Core Authoring
 
-- Lightweight markup: Structure text.
+- Lightweight markup: Structured text.
 - WYSIWYM: Meaning-focused.
-- Benefits: Readable, durable, AI-integrated, GitHub-rendered.
-- History: Outlasts word processors.
+- Benefits: Readable, durable, GitHub-rendered.
+- History: Word processors fade; Markdown endures.
 
 ```mermaid
 graph TD
-    A[Markup Formats]
-    A --> B[Long-Term Readability]
-    C[LLM Generate]  --> D[AI Editing]
-    E[GitHub Render] --> F[Collab Review]
-    B --> G[Modern Use]
+    A(Markup Formats)
+    A --> B(Long-Term Readability)
+    C(LLM Generate)  --> D(AI Editing)
+    E(GitHub Render) --> F(Collab Review)
+    B --> G(Publish Early And Often)
     D --> G
     F --> G
-    G --> H[Pandoc/Mermaid/CI/CD]
-    H --> I[Publish Early And Often]
 
     style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
     style B fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
@@ -313,20 +317,16 @@ graph TD
     style E fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
     style F fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
     style G fill:#2E8B57,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
-    style H fill:#20B2AA,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
-    style I fill:#20B2AA,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
 ```
 
 ---
 
-# Mermaid: Diagram Language
+## Mermaid: Diagram Description Language
 
 - Text-based: Simple syntax.
 - Like Markdown: Portable, editor-agnostic.
 - Embed in MD: Renders to graphics/SVG (clickable).
 - Supported: GitHub, Pandoc, VS Code.
-
-Types: Sequence, Gantt, Flowchart, Class, State, ER, Journey, Mindmap, Timeline, Requirement, Git Graph, Pie, Quadrant, Sankey, Block, C4.
 
 ```mermaid
 mindmap
@@ -351,13 +351,14 @@ mindmap
 
 ---
 
-# Step 1: VS Code Content Creation
+## Step 1: VS Code Content Creation
 
 ```mermaid
 graph LR
-    A[Write Markdown] --> B[Add Mermaid]
-    B --> C[Preview in VS Code]
-    C --> D[Commit Changes]
+    A(Write Markdown)
+    A --> B(Add Mermaid)
+    B --> C(Preview in VS Code)
+    C --> D(Commit Changes)
     D -->|Repeat| A
 
     style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
@@ -373,17 +374,18 @@ graph LR
 
 ---
 
-# Step 2: Pandoc Conversion
+## Step 2: Pandoc Conversion
 
 ```mermaid
 graph TD
-    A[MD + Mermaid] --> B[Pandoc + Filter]
-    B --> C[HTML]
-    B --> D[PDF]
-    B --> E[EPUB]
-    B --> F[LaTeX]
-    B --> G[DOCX]
-    B --> H[PPT]
+    A(MD + Mermaid)
+    A --> B(Pandoc + Filter)
+    B --> C(HTML)
+    B --> D(PDF)
+    B --> E(EPUB)
+    B --> F(LaTeX)
+    B --> G(DOCX)
+    B --> H(PPT)
 
     style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
     style B fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
@@ -397,32 +399,43 @@ graph TD
 
 - Renders to formats.
 - YAML metadata.
-- Command: `pandoc -F mermaid-filter in.md -o out.html`.
+- Command:
+
+```bash
+pandoc -F mermaid-filter in.md -o out.html
+```
 
 ---
 
-# Step 3: CSS Styling
+## Step 3: CSS Styling
 
 - From Word: Save as HTML, extract CSS.
-- Tool: `pip install html2css; html2css -i html -o css`.
+- Tool:
+```bash
+pip install html2css
+html2css -i html -o css
+```
 - Apply: `--css=style.css`.
 - Controls: Fonts, colors, headings.
 
-Command: `pandoc -F mermaid-filter --css=style.css in.md -o out.html`.
+Command:
+```bash
+pandoc -F mermaid-filter --css=style.css in.md -o out.html
+```
 
 ---
 
-# Step 4: GitHub Collaboration
+## Step 4: GitHub Collaboration
 
 ```mermaid
 graph LR
-    A[Edit Markdown] --> B[Push Branch]
-    B --> C[Pull Request]
-    C --> D[Review]
+    A(Edit Markdown) --> B(Push Branch)
+    B --> C(Pull Request)
+    C --> D(Review)
     D --> E{Approved?}
-    E -->|Yes| F[Merge Main]
+    E -->|Yes| F(Merge Main)
     E -->|No| A
-    F --> G[Publish]
+    F --> G(Publish)
 
     style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
     style B fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
@@ -439,7 +452,7 @@ graph LR
 
 ---
 
-# Step 5: Makefile Automation
+## Step 5: Makefile Automation
 
 - Tasks: html, push, all.
 - Example:
@@ -450,22 +463,37 @@ graph LR
 all: html push
 
 html: 
-	pandoc -F mermaid-filter -s --css=styles.css in.md -o in.html
+	pandoc -F mermaid-filter -s --css=my.css in.md -o in.html
 
 push:
 	git commit -am "Update docs" && git push
 ```
 
-- Run: `make all`.
+- Run:
+```bash
+make all
+```
 
 ---
 
-# Step 6: SNOW KB Publishing
+## Step 6: SNOW KB Publishing
 
-- Manual: Paste HTML, update, preview, upload images, submit.
-- Auto: Jenkins CI/CD – Checkout, build (make html), POST to API.
-- Secrets: Jenkins Credentials.
-- Alt: Makefile/curl with KeePass; GitHub Actions (YAML workflow, API POST).
+- Manual:
+    - Paste HTML
+    - Update
+    - Preview
+    - Upload images
+    - Submit for review
+- Auto: Jenkins CI/CD
+    - Checkout
+    - Build (make html)
+    - POST to API
+    - Secrets: Jenkins Credentials
+- Alt:
+    - Makefile/curl with KeePass
+    - GitHub Actions (YAML workflow, API POST)
+
+---
 
 ```mermaid
 sequenceDiagram
@@ -478,7 +506,7 @@ sequenceDiagram
 
 ---
 
-# Next Steps
+## Next Steps
 
 - PoC: Jenkins auto-publish.
 - Enable GitHub Actions for CI/CD.
@@ -488,18 +516,18 @@ sequenceDiagram
 
 ---
 
-# Summary
+## Summary
 
 ```mermaid
 graph TD
-    A[Collab Docs]
-    A --> B[Longevity]
-    A --> C[Workflows]
-    A --> D[Clarity]
-    B --> E[Team Mentality]
+    A(Collab Docs)
+    A --> B(Longevity)
+    A --> C(Workflows)
+    A --> D(Clarity)
+    B --> E(Team Mentality)
     C --> E
     D --> E
-    E --> F[Project Success]
+    E --> F(Project Success)
 
     style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
     style B fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
@@ -511,7 +539,7 @@ graph TD
 
 ---
 
-# Key Takeaways
+## Key Takeaways
 
 - Strategic asset: Sharing, onboarding, maintenance.
 - Avoid pitfalls: Confusion, costs.
@@ -519,4 +547,4 @@ graph TD
 - Mindset: Team sport.
 - Tools: Markdown, Mermaid, Git, Pandoc, Automation.
 
-**Action**: Invest early in collab docs – save time, empower teams.
+**Action**: Invest early in collaborative docs – save time, empower teams.

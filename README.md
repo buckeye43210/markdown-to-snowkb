@@ -481,6 +481,7 @@ if they were suddenly unavailable (e.g., "hit by a bus"), would leave the projec
 It highlights the vulnerability of a project when critical information is held by only a few people and is not documented or shared.
 
 ---
+## Bus Factor (cont)
 
 ### Key Points About the Bus Factor
 - **Definition**: The bus factor is the minimum number of team members who would need to be unavailable for a project to stall or fail due to the loss of critical knowledge.
@@ -488,6 +489,7 @@ It highlights the vulnerability of a project when critical information is held b
 - **High Bus Factor**: A higher bus factor (e.g., 5 or more) means knowledge is distributed across more team members, reducing risk and making the project more resilient.
 
 ---
+## Bus Factor (cont)
 
 ### Key Points (cont)
 - **Connection to Documentation**: Poor documentation often contributes to a low bus factor, as critical information isn’t written down or shared. Good documentation increases the bus factor by ensuring knowledge is accessible to others.
@@ -498,6 +500,7 @@ It highlights the vulnerability of a project when critical information is held b
   - Encourage knowledge-sharing practices like pair programming or regular team reviews.
 
 ---
+## Bus Factor (cont)
 
 ### Example
 In a software project, if only one developer understands the codebase’s architecture and there’s no documentation, the bus factor is 1.
@@ -506,8 +509,8 @@ By contrast, if the architecture is well-documented and multiple team members ar
 and the project is less vulnerable.
 
 ---
+## Bus Factor (cont)
 
 ### Why It Matters
 A low bus factor can lead to delays, increased costs, or project failure when key individuals are unavailable due to illness, departure, or other reasons.
 It underscores the importance of documentation and knowledge sharing, as highlighted in this presentation, to ensure project continuity and resilience.
-

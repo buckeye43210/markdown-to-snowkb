@@ -9,7 +9,7 @@ fonttheme: professionalfonts
 ---
 
 ## Why Documentation Matters
-- Good documentation; the backbone of successful projects.
+- Good docs form the backbone of successful projects.
 - Enables knowledge sharing, onboarding, maintenance.
 - Poor documentation results in confusion, inefficiency.
 - Collaboration ensures accuracy, relevance.
@@ -29,23 +29,30 @@ fonttheme: professionalfonts
 - **Tools**: VS Code, Markdown, Mermaid, Pandoc, GitHub.
 - **Steps**: Write, preview, collaborate, convert, publish.
 - **Focus**: On simplicity, structure, integration, longevity.
+- **CI/CD**: Continuous Integration/Continuous Delivery
 
 ---
 
+## What is Markdown?
+- **Markdown** is a lightweight markup language.
+- **Decarate** text to add structure and formatting.
+- **WYSIWYM** What You See Is What You Meant.
+- **Formatted Text** determines structure and format.
+- **Platform Independent** Create using any text editor.
+
 ## Benefits of Markdown
+- **Human Readable**: Displayed text easily comprehended.
 - **Longevity**: Markup languages are lightweight, durable.
     - Runoff (1960s), Postscript (1982), \LaTeX (1984)
 - **LLM Integration**: LLM suggestions, editor plugins.
 - **GitHub Rendering**: Native Markdown/Mermaid support.
 - **Fewer Distractions**: Focus on pure essense of document.
-    - **WYSIWYG** vs **WYSIWYM**
 - **Attributes**: Structured, portable, future-proof.
 - **History**: Word processors fade; Markup languages endure.
 
 ---
 
 ## Markdown Benefits Diagram
-
 ```mermaid
 graph TD
     A(Legacy Formats)          --> B(Long-Term Readability)
@@ -69,8 +76,43 @@ graph TD
 
 ---
 
-## Sample Mermaid Diagram Types
+## What is Mermaid?
+- Mermaid is a Diagram Description Language.
+- Uses simple, text based-syntax.
+- Like Markdown, create diagrams using any text editor.
+- Diagrams easily added to Markdown documents.
+- Embedded Mermaid diagrams rendered into graphics.
+- Wide Adoption: Supported by Lucid, GitHub, Pandoc, etc.
 
+---
+
+## What is Mermaid (cont)?
+
+### Mermaid Mind Map
+```mermaid
+mindmap
+  root((Mermaid))
+    Diagram Description Language
+    Simple, text-based syntax
+      Many diagram types supported
+    Like Markdown
+      Portable
+      Platform independent
+      Use any text editor
+    Diagrams in Markdown
+      Embedded diagrams rendered into graphics
+      Can contain relative and external links
+    Wide Adoption
+      Supported by
+        Lucid
+        GitHub
+        Pandoc
+        etc.
+```
+
+---
+
+## Sample Mermaid Diagram Types
 - Sequence Diagram - Actor/Object interaction over time.
 - Gantt Chart - Represents project schedules and tasks.
 - Flowchart - Visualizes processes or workflows.
@@ -86,7 +128,7 @@ graph TD
 - Quadrant Chart - Compares data in four quadrants.
 - Sankey Diagram - Shows flow magnitudes between nodes.
 - Block Diagram - System component interactions.
-- C4 Diagram - Models software architecture.
+- C4 Diagram - Architecture models.
 
 ---
 
@@ -245,7 +287,7 @@ sequenceDiagram
     C-->>J: Return Credentials
     J->J: Run `make html`
     Note over J: Converts Markdown to HTML
-    Note over J: Renders Mermaid Diagrams
+    Note over J: Renders Mermaid Diagrams 
     J->>S: POST JSON Payload
     Note over J,S: {"short_description": "Documentation Update",<br>"text": "HTML content",<br>"kb_knowledge_base": "sys_id",<br>"workflow_state": "published"}
     S-->>J: Confirm Publication

@@ -220,19 +220,14 @@ Common issues with traditional collaboration:
 ---
 
 # A Web-First Workflow
-To create content for the web:
-1. Use **Markdown** for simple, text-based content creation.
-2. Adopt **Git** and platforms like **GitHub** for collaboration.
-3. Tools to start:
-   - **Git CLI** for version control.
-   - **VS Code** for Markdown editing.
-4. Create a repository and collaborate seamlessly.
+
 
 ~~~mermaid
 graph LR
-    A[Use Markdown for content creation] --> B[Adopt Git and GitHub for collaboration]
-    B --> C[Use tools: GitHub, VS Code]
-    C --> D[Create repository and collaborate]
+    A(Use Markdown for content creation)
+    A --> B(Adopt Git and GitHub for collaboration)
+    B --> C(Use tools: GitHub, VS Code)
+    C --> D(Create repository and collaborate)
 
     classDef markdown fill:#f9e79f,stroke:#333,stroke-width:2px;
     classDef git fill:#a9dfbf,stroke:#333,stroke-width:2px;
@@ -243,7 +238,16 @@ graph LR
     class B git;
     class C tools;
     class D repo;
-~~~    
+~~~  
+
+To create content for the web:
+
+1. Use **Markdown** for simple, text-based content creation.
+2. Adopt **Git** and platforms like **GitHub** for collaboration.
+3. Tools to start:
+   - **Git CLI** for version control.
+   - **VS Code** for Markdown editing.
+4. Create a repository and collaborate seamlessly.
 
 ---
 

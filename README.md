@@ -196,8 +196,8 @@ graph LR
 ## Step 2: Pandoc Conversion Tool
 ```mermaid
 graph TD
-    A(Markdown w/ Mermaid)
-    A --> B(Pandoc)
+    A(Markdown with Mermaid)
+    A --> B(Pandoc with<br>mermaid-filter)
     B --> C(HTML)
     B --> D(PDF)
     B --> E(EPUB)

@@ -94,10 +94,10 @@ header-includes:
 ```mermaid
 graph LR
     A(Architecture Knowledge)
-    A -->|Solo| B(Bus Factor 1)
-    B --> C(High Vulnerability)
-    A -->|Documented & Shared| D(Increased Bus Factor)
+    A -->|Documented<br> & Shared| D(High Bus Factor)
     D --> E(Resilience)
+    A -->|Solo| B(Low Bus Factor)
+    B --> C(High Vulnerability)
 
     classDef neutral fill:#f9e79f,stroke:#333,stroke-width:2px;
     classDef low fill:#f5b7b1,stroke:#333,stroke-width:2px;
@@ -548,5 +548,6 @@ graph TD
 - Tools: Markdown, Mermaid, Git, Pandoc, Automation.
 
 **Action**:
+
 - Invest early in collaborative docs.
 - save time, empower teams.

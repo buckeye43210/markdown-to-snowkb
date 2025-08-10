@@ -93,7 +93,7 @@ graph TD
 mindmap
   root((Mermaid))
     Diagram Description Language
-    Simple, text-based syntax
+      Simple, text-based syntax
       Many diagram types supported
     Like Markdown
       Portable
@@ -103,11 +103,10 @@ mindmap
       Embedded diagrams rendered into graphics
       Can contain relative and external links
     Wide Adoption
-      Supported by
-        Lucid
-        GitHub
-        Pandoc
-        etc.
+      Lucid
+      GitHub
+      Pandoc
+      Others
 ```
 
 ---

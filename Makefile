@@ -1,5 +1,7 @@
+.PHONY: all pdf beamer html push clean
+
 # Default target
-all: pdf
+all: pdf beamer html
 
 # Generate pdf document
 pdf:
@@ -20,5 +22,3 @@ push:
 # Clean up
 clean:
 	rm -f *.html *.pdf
-
-.PHONY: all pdf html clean

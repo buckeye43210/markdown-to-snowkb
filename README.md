@@ -6,6 +6,7 @@ date: 13 August 2025
 theme: PaloAlto
 colortheme: whale
 fonttheme: professionalfonts
+
 ---
 
 ## Overview
@@ -50,10 +51,6 @@ fonttheme: professionalfonts
 - **Confusion**: Ambiguous or missing docs lead to miscommunication and errors.
 - **Inefficiency**: Teams waste time searching for answers or reverse-engineering existing systems.
 - **Knowledge Loss**: Departure of key members creates gaps ("\hyperlink{bus-factor}{\textbf{bus factor}}").
-
-
-
-
 - **Increased Costs**: Technical debt accumulates, requiring costly rework.
 
 **Example**: Unclear code without comments forces developers to spend hours deciphering logic.

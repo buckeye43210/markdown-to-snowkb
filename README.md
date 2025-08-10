@@ -10,7 +10,7 @@ header-includes:
   - \usepackage{hyperref}
 ---
 
-## Documentation Overview
+# Documentation Overview
 
 - [Backbone of Successful Projects](#backbone)
 - [Enables Knowledge Sharing](#knowledge-sharing-and-onboarding)
@@ -26,7 +26,7 @@ header-includes:
 
 ---
 
-## Overview (cont)
+# Overview (cont)
 
 - [Markdown for Authoring](#markdown)
 - [Mermaid for Diagrams]($mermaid)
@@ -42,7 +42,7 @@ header-includes:
 
 ---
 
-## Documentation: The Backbone of Success {#backbone}
+# Documentation: The Backbone of Success {#backbone}
 
 - Clarity and Alignment: Ensures team members understand goals, processes, and technical details.
 - Scalability: Supports project growth by guiding new contributors.
@@ -53,7 +53,7 @@ header-includes:
 
 ---
 
-## Knowledge Sharing and Onboarding
+# Knowledge Sharing and Onboarding
 
 - Democratizes Knowledge: Reduces reliance on individual experts, fostering autonomy.
 - Accelerates Onboarding: Helps new hires grasp workflows and tools quickly.
@@ -64,7 +64,7 @@ header-includes:
 
 ---
 
-## Pitfalls of Poor Documentation {#poor-docs}
+# Pitfalls of Poor Documentation {#poor-docs}
 
 - Confusion: Ambiguous or missing docs lead to miscommunication and errors.
 - Inefficiency: Teams waste time searching for answers or reverse-engineering existing systems.
@@ -75,7 +75,7 @@ header-includes:
 
 ---
 
-## Bus Factor
+# Bus Factor
 
 The **bus factor** is a concept used to measure the risk of knowledge loss in a project or team, specifically the number of key individuals who,
 if they were suddenly unavailable (e.g., "hit by a bus"), would leave the project in disarray due to their unique knowledge or expertise.
@@ -84,8 +84,8 @@ It highlights the vulnerability of a project when critical information is held b
 
 ---
 
-## Bus Factor (cont)
-### Key Points About the Bus Factor
+# Bus Factor (cont) {#buss-factor01}
+## Key Points About the Bus Factor
 
 - **Definition**: The minimum number of team members whose absence would stall a project due to lost knowledge.
 - **Low Bus Factor**: A low bus factor (e.g., 1 or 2) indicates high risk, as the project relies heavily on a small number of individuals. For example, if only one developer knows how a critical system works, the bus factor is 1.
@@ -94,8 +94,8 @@ It highlights the vulnerability of a project when critical information is held b
 
 ---
 
-## Bus Factor (cont)
-### Key Points (cont)
+# Bus Factor (cont) {#buss-factor02}
+## Key Points (cont)
 
 - Connection to Documentation: Poor documentation often contributes to a low bus factor, as critical information isn’t written down or shared.
 - Good documentation increases the bus factor by ensuring knowledge is accessible to others.
@@ -107,26 +107,24 @@ It highlights the vulnerability of a project when critical information is held b
 
 ---
 
-## Bus Factor (cont)
-### Example
+# Bus Factor (cont)  {#buss-factor03}
+
+## Example
 In a software project, if only one developer understands the codebase’s architecture and there’s no documentation, the bus factor is 1.
 If that developer leaves or is unavailable, the project could grind to a halt as others struggle to understand the system.
 By contrast, if the architecture is well-documented and multiple team members are familiar with it, the bus factor is higher, and the project is less vulnerable.<br>
 
 ---
 
-## Why It Matters
+# Why Bus Factor Matters
 
 A low bus factor can lead to delays, increased costs, or project failure when key individuals are unavailable due to illness, departure,
 or other reasons. It underscores the importance of documentation and knowledge sharing, as highlighted in this presentation, to ensure project continuity and resilience.
 
 ---
 
-## We've Been Trained To Make Paper {#make-paper}
+# We've Been Trained to Make Paper {#make-paper}
 
-
-
-# We've Been Trained to Make Paper
 ## Reimagining Content Creation for the Web
 **Author**: Credit to Ben Balter (2012)  
 **Source**: [https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/](https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/)  
@@ -134,17 +132,21 @@ or other reasons. It underscores the importance of documentation and knowledge s
 
 ---
 
-# The Problem with Traditional Workflows
-- We've been trained to create content for **paper**, not the web.
-- Traditional tools like Microsoft Word prioritize print-centric features:
+# The Problem with Traditional Workflows {#paper-problem00} 
+- Trained to create content for **paper**, not the web.
+- Traditional tools prioritize print-centric features:
   - Margins, page breaks, and physical layout.
   - Limited support for web features like hyperlinks or mobile responsiveness.
 - Most documents today are consumed digitally, not physically.
 
 ---
 
-# A Broken Collaborative Process
+# Problem (cont) {#paper-problem01}
+
+## A Broken Collaborative Process
+
 Typical document collaboration workflow:
+
 1. Draft in Microsoft Word.
 2. Share via email or shared folder.
 3. Manually reconcile changes.
@@ -153,8 +155,8 @@ Typical document collaboration workflow:
 6. Publish.
 
 ~~~mermaid
-graph TD
-    A[Draft in Microsoft Word] --> B[Share via email or shared folder]
+graph LR
+    A[Draft in Microsoft Word] --> B[Share via email attachment or shared folder]
     B --> C[Manually reconcile changes]
     C -->|Repeat until finalized| C
     C --> D[Convert to web-friendly format]
@@ -216,14 +218,14 @@ To create content for the web:
 1. Use **Markdown** for simple, text-based content creation.
 2. Adopt **Git** and platforms like **GitHub** for collaboration.
 3. Tools to start:
-   - **GitHub Desktop** for version control.
-   - **Mou** for Markdown editing.
+   - **GitHub CLI** for version control.
+   - **VS Code** for Markdown editing.
 4. Create a repository and collaborate seamlessly.
 
 ~~~mermaid
-graph TD
+graph LR
     A[Use Markdown for content creation] --> B[Adopt Git and GitHub for collaboration]
-    B --> C[Use tools: GitHub Desktop, Mou]
+    B --> C[Use tools: GitHub, VS Code]
     C --> D[Create repository and collaborate]
 
     classDef markdown fill:#f9e79f,stroke:#333,stroke-width:2px;
@@ -247,9 +249,9 @@ graph TD
 
 **Credit**: Ben Balter, 2012 [](https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/)nly distribution, the time is ripe for a more evolved, text-centric, distributed workflow to become mainstream. Stop making paper, start collaborating.
 
+---
 
-
-## Collaboration for Effective Documentation {#collaboration}
+# Collaboration for Effective Documentation {#collaboration}
 
 - Accuracy: Multiple perspectives catch errors and fill gaps.
 - Relevance: Tailors content to diverse audiences (e.g., users vs. developers).
@@ -261,7 +263,7 @@ graph TD
 
 ---
 
-## Enhances User Experience {#user-experience}
+# Enhances User Experience {#user-experience}
 
 - Empowers Users: Clear guides and FAQs enable self-service, reducing support queries.
 - Builds Trust: Professional documentation reflects product quality.
@@ -273,7 +275,7 @@ graph TD
 
 ---
 
-## Best Practices for Documentation {#best-practices}
+# Best Practices for Documentation {#best-practices}
 
 - Clear and Concise: Use simple language and visuals (e.g., diagrams, screenshots).
 - Organized and Searchable: Structure content logically and use searchable platforms.
@@ -285,7 +287,7 @@ graph TD
 
 ---
 
-## Documentation Life Cycle {#life-cycle}
+# Documentation Life Cycle {#life-cycle}
 
 ~~~mermaid
 graph TD
@@ -322,7 +324,7 @@ graph TD
 
 ---
 
-## Team Sport Mindset
+# Team Sport Mindset
 
 - Everyone contributes: developers, writers, consumers.
 - Collaborative tools streamline workflows.
@@ -332,7 +334,7 @@ graph TD
 
 ---
 
-## Workflow Overview
+# Workflow Overview
 
 - Input: Subject Matter Experts, feedback loops.
 - Tools: VS Code, Markdown, Mermaid, Pandoc, GitHub.
@@ -343,7 +345,7 @@ graph TD
 
 ---
 
-## What is Markdown? {#markdown}
+# What is Markdown? {#markdown}
 
 - Markdown: A lightweight markup language.
 - Decorate Text: Adds structure and formatting.
@@ -354,7 +356,7 @@ graph TD
 
 ---
 
-## Benefits of Markdown
+# Benefits of Markdown
 
 - Human Readable: Displayed text easily comprehended.
 - Longevity: Markup languages are lightweight, durable.
@@ -368,7 +370,7 @@ graph TD
 
 ---
 
-## Markdown Benefits Diagram {#benefits-diagram}
+# Markdown Benefits Diagram {#benefits-diagram}
 
 ~~~mermaid
 graph TD
@@ -393,7 +395,7 @@ graph TD
 ~~~
 
 
-## What is Mermaid? {#mermaid}
+# What is Mermaid? {#mermaid}
 
 - Mermaid is a Diagram Description Language.
 - Uses simple, text-based syntax.
@@ -405,9 +407,9 @@ graph TD
 
 ---
 
-## What is Mermaid (cont)?
+# What is Mermaid (cont)?
 
-### Mermaid Mind Map
+## Mermaid Mind Map
 
 ~~~mermaid
 mindmap
@@ -434,7 +436,7 @@ mindmap
 
 ---
 
-## Sample Mermaid Diagram Types
+# Sample Mermaid Diagram Types
 
 - Sequence Diagram - Actor/Object interaction over time.
 - Gantt Chart - Represents project schedules and tasks.
@@ -453,10 +455,9 @@ mindmap
 - Block Diagram - System component interactions.
 - C4 Diagram - Architecture models.
 
-
 ---
 
-## Step 1: Create Content in VS Code
+# Step 1: Create Content in VS Code
 
 ~~~mermaid
 graph LR
@@ -483,7 +484,7 @@ graph LR
 
 ---
 
-## Step 2: Pandoc Conversion Tool {#pandoc}
+# Step 2: Pandoc Conversion Tool {#pandoc}
 
 ~~~mermaid
 graph TD
@@ -517,7 +518,7 @@ pandoc -F mermaid-filter -t html in.md -o out.html
 
 ---
 
-## Step 3: CSS Styling
+# Step 3: CSS Styling
 
 - Create Word document with styles (fonts, colors).
 - Convert DOCX to HTML via Save As.
@@ -543,7 +544,7 @@ pandoc -F mermaid-filter                           \
 
 ---
 
-## Step 4: GitHub Collaboration
+# Step 4: GitHub Collaboration
 
 ~~~mermaid
 graph LR
@@ -571,7 +572,7 @@ graph LR
 - Native Markdown/Mermaid rendering.
 
 
-## Step 5: Makefile Conversion Automation {#makefile}
+# Step 5: Makefile Conversion Automation {#makefile}
 
 - Automates conversions, Git operations.
 - Tasks: all, html, push.
@@ -593,7 +594,7 @@ push:
 
 ---
 
-## Step 6: SNOW KB Publishing {#snow-kb}
+# Step 6: SNOW KB Publishing {#snow-kb}
 
 - Manual: Process Follows:
     - Paste HTML into SNOW KB editor
@@ -615,7 +616,7 @@ push:
 
 ---
 
-## Sequence Diagram
+# Sequence Diagram
 
 ~~~mermaid
 sequenceDiagram
@@ -638,7 +639,7 @@ sequenceDiagram
 
 ---
 
-## Next Steps
+# Next Steps
 
 - Proof of Concept: Automate publishing with Jenkins.
 - GitHub Actions: Request enablement for simpler CI/CD.
@@ -654,7 +655,7 @@ sequenceDiagram
 
 ---
 
-## Summary
+# Summary
 
 ~~~mermaid
 graph TD
@@ -684,7 +685,7 @@ graph TD
 
 ---
 
-## Key Takeaways
+# Key Takeaways
 
 - Documentation is a strategic asset for project success.
 - Enables knowledge sharing, onboarding, and maintenance.
@@ -693,5 +694,5 @@ graph TD
 - Enhances user experience and product adoption.
 - Let's Make Documentation A Team Sport!
 
-**Call to Action**: Invest in documentation early and collaboratively to save time, reduce costs, and empower your team and users.  
+**Call to Action**: Invest in documentation early and collaboratively to save time, reduce costs, while empowering your team and stakeholders.  
 

@@ -173,6 +173,7 @@ graph LR
     A(Write Markdown) --> B(Add Mermaid Diagrams)
     B --> C(Preview in VS Code)
     C --> D(Commit to GitHub)
+    D --> A
 
     style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
     style B fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
@@ -184,8 +185,10 @@ graph LR
 - Write Markdown for simplicity.
 - Add Mermaid diagrams for workflows, etc.
 - Paste screenshots from clipboard.
-- Add other bitmap images by reference.
+- Add other images by reference.
 - Preview diagrams and images in real-time.
+- Commit Changes to GitHub.
+- For Best Results, Rense and Repeat.
 
 
 ---

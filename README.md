@@ -4,8 +4,6 @@ subtitle: "A Collaborative Environment For Document Publication"
 author: Rick Holbert
 date: 13 August 2025
 theme: PaloAlto
-colortheme: whale
-fonttheme: professionalfonts
 
 ---
 

@@ -262,9 +262,9 @@ graph LR
 - Break the habit of using outdated, print-centric software.
 - Stop making paper, Start collaborating.
 - Start today:
-    - Learn Markdown
-    - Use Git
-    - Focus on **content**.
+    - Learn **Markdown**
+    - Use **Git**
+    - Focus on **Content**.
 
 **Credit**: Ben Balter, 2012 [We've been trained to make paper](https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/)
 

@@ -547,4 +547,6 @@ graph TD
 - Mindset: Team sport.
 - Tools: Markdown, Mermaid, Git, Pandoc, Automation.
 
-**Action**: Invest early in collaborative docs – save time, empower teams.
+**Action**:
+- Invest early in collaborative docs.
+- save time, empower teams.

@@ -116,7 +116,7 @@ graph LR
 ## Step 2: Pandoc Conversion Tool
 ```mermaid
 graph TD
-    A(Markdown/Mermaid)
+    A(Markdown w/ Mermaid)
     A --> B(Pandoc)
     B --> C(HTML)
     B --> D(PDF)
@@ -136,7 +136,7 @@ graph TD
 ```
 - Renders Markdown to HTML, PDF, EPUB, etc.
 - Uses `mermaid-filter` for diagram rendering.
-- Set metadata values via YAML in document header.
+- Use YAML formatted metadata values in document header.
 - Example Command:
 
 ```bash
@@ -146,15 +146,23 @@ pandoc -F mermaid-filter -t html in.md -o out.html
 ---
 
 ## Step 3: Style with CSS
-- Create .docx with styles (fonts, colors).
-- Convert to HTML via Save As.
-- Extract CSS from style section of HTML.
-- Apply to HTML: `pandoc --css=styles.css`.
+- Create Word document with styles (fonts, colors).
+- Convert DOCX to HTML via Save As.
+- Extract CSS from HTML style section.
+
+```bash
+pip install html2css
+html2css --input saved_as.html --output style.css
+```
+- Apply to HTML: `pandoc --css=style.css`.
 - Example: Headings, font sizes, colors.
 - Example Command:
 
 ```bash
-pandoc -F mermaid-filter --css=styles.css -t html in.md -o out.html
+pandoc -F mermaid-filter                         \
+       --css=style.css                           \
+       --to html                                 \
+       --out out.html in.md
 ```
 
 ---

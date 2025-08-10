@@ -131,7 +131,7 @@ mindmap
       Many diagram types supported
     Like Markdown
       Portable
-      Platform independent
+      Platform Agnostic
       Use any text editor
     Diagrams in Markdown
       Embedded diagrams rendered into graphics

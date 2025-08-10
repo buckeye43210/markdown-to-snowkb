@@ -74,7 +74,7 @@ fonttheme: "professionalfonts"
 
 ## Bus Factor
 
-The bus factor is a concept used to measure the risk of knowledge loss in a project or team, specifically the number of key individuals who,
+The **bus factor** is a concept used to measure the risk of knowledge loss in a project or team, specifically the number of key individuals who,
 if they were suddenly unavailable (e.g., "hit by a bus"), would leave the project in disarray due to their unique knowledge or expertise.
 It highlights the vulnerability of a project when critical information is held by only a few people and is not documented or shared.
 

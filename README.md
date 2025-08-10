@@ -185,7 +185,7 @@ graph LR
 - Write Markdown for simplicity.
 - Add Mermaid diagrams for workflows, etc.
 - Paste screenshots from clipboard.
-- Add other images by reference.
+- Add other images as Markdown links.
 - Preview diagrams and images in real-time.
 - Commit Changes to GitHub.
 - For Best Results, Rense and Repeat.

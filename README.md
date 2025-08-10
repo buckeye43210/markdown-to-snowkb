@@ -363,9 +363,9 @@ graph TD
 # What is Markdown? {#markdown}
 
 - Markdown: A lightweight markup language.
-- Decorate Text: Adds structure and formatting.
-- WYSIWYM: What You See Is What You Meant.
+- Decorated Text: Adds structure and formatting.
 - Formatted Text: Determines structure and format.
+- WYSIWYM: What You See Is What You Meant.
 - Platform Independent: Create using any text editor.
 
 
@@ -376,7 +376,7 @@ graph TD
 - Human Readable: Displayed text easily comprehended.
 - Longevity: Markup languages are lightweight, durable.
     - Runoff (1960s), Postscript (1982), \LaTeX (1984)
-- LLM Integration: LLM suggestions, editor plugins.
+- LLM Integration: AI suggestions, editor plugins.
 - GitHub Rendering: Native Markdown/Mermaid support.
 - Fewer Distractions: Focus on pure essence of document.
 - Attributes: Structured, portable, future-proof.
@@ -416,9 +416,8 @@ graph TD
 - Uses simple, text-based syntax.
 - Like Markdown, create diagrams using any text editor.
 - Diagrams easily added to Markdown documents.
-- Embedded Mermaid diagrams rendered into graphics.
+- Embedded Mermaid diagrams render into graphics.
 - Wide Adoption: Supported by Lucid, GitHub, Pandoc, etc.
-
 
 ---
 
@@ -495,7 +494,6 @@ graph LR
 - Preview diagrams and images in real-time.
 - Commit Changes to GitHub.
 - For Best Results: Lather, Rinse and Repeat.
-
 
 ---
 
@@ -625,7 +623,7 @@ push:
     - Publish: POST JSON to ServiceNow API
     - Secrets: Stored in Jenkins Credentials Plugin.
 
-
+- Alternative: Makefile leveraging curl for API calls and KeePass for stored secrets.
 - Alternative: GitHub Actions (make html YAML workflow, API POST) -- not currently enabled.
 
 

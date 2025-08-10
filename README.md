@@ -125,7 +125,7 @@ graph TD
 ### Mermaid Mind Map
 ```mermaid
 mindmap
-  root((Mermaid))
+  root(Mermaid)
     Diagram Description Language
       Simple, text-based syntax
       Many diagram types supported
@@ -135,11 +135,12 @@ mindmap
       Use any text editor
     Diagrams in Markdown
       Embedded diagrams rendered into graphics
-      Can contain relative and external links
-    Wide Adoption
+      Rendered SVG supports click links
+    Widely Adopted
       Lucid
       GitHub
       Pandoc
+      VS Code
       Others
 ```
 

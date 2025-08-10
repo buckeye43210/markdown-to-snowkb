@@ -177,7 +177,7 @@ graph TD
 ```
 - Renders Markdown to HTML, PDF, EPUB, etc.
 - Uses `mermaid-filter` for diagram rendering.
-- Use YAML formatted metadata values in document header.
+- YAML formatted metadata values in document header.
 - Example Command:
 
 ```bash
@@ -196,13 +196,13 @@ pip install html2css
 html2css --input saved_as.html --output style.css
 ```
 - Apply to HTML: `pandoc --css=style.css`.
-- Example: Headings, font sizes, colors.
+- Controls: headings, fonts, font sizes, colors, etc.
 - Example Command:
 
 ```bash
-pandoc -F mermaid-filter                         \
-       --css=style.css                           \
-       --to html                                 \
+pandoc -F mermaid-filter                           \
+       --css=style.css                             \
+       --to html                                   \
        --out out.html in.md
 ```
 
@@ -213,7 +213,7 @@ pandoc -F mermaid-filter                         \
 ```mermaid
 graph LR
     A(Edit Markdown)
-    A --> B(Push to Branch)
+    A --> B(Push to Feature Branch)
     B --> C(Create Pull Request)
     C --> D(Team Review)
     D --> E{Approved?}
@@ -237,7 +237,7 @@ graph LR
 
 ---
 
-## Step 5: Automate Conversion with Makefile
+## Step 5: Makefile Conversion Automation
 - Automates conversions, Git operations.
 - Tasks: all, html, push.
 - Commands: `make all`, `make html`, `make push`.

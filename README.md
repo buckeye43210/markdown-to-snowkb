@@ -344,6 +344,6 @@ graph TD
 
 - Collaborative Documentation Drives Success.
 - Markdown Ensures Longevity, Provides LLM Integration.
-- VS Code, Pandoc, GitHub, Jenkins streamline workflows.
+- VS Code, Pandoc, GitHub, Jenkins Streamline Workflows.
 - Mermaid Diagrams and CSS Themes Enhance Clarity.
 - Let’s Make Documentation A Team Sport!

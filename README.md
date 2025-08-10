@@ -13,17 +13,24 @@ fonttheme: "professionalfonts"
 - [Backbone of Successful Projects](#backbone)
 - [Enables Knowledge Sharing](#knowledge-sharing-and-onboarding)
 - [Consequences of Poor Documentation](#poor-docs)
-- [Bus Factor](#bus-factor)
-
-- \hyperlink{collaboration}{Collaboration for Effective Documentation}
-- \hyperlink{user-experience}{Enhances User Experience}
-- \hyperlink{best-practices}{Best Practices}
-- \hyperlink{documentation-life-cycle}{Documentation Life Cycle}
-- \hyperlink{team-sport-mindset}{Team Sport Mindset}
-- \hyperlink{workflow-overview}{Workflow Overview}
-- \hyperlink{key-takeaways}{Key Takeaways}
-- \hyperlink{next-steps}{Next Steps}
-- \hyperlink{conclusion}{Conclusion}
+- [The Bus Factor](#bus-factor)
+- [Collaboration for Effective Documentation](#collaboration)
+- [Enhances User Experience](#user-experience)
+- [Best Practices](#best-practices)
+- [Documentation Life Cycle](#documentation-life-cycle)
+- [Team Sport Mindset](#team-sport-mindset)
+- [Workflow Overview](#workflow-overview)
+- [Markdown](#markdown)
+- [Mermaid]($mermaid)
+- [VS Code](#vs-code)
+- [Pandoc](#pandoc)
+- [CSS Styling](#css-styling)
+- [GitHub Collaboration](#github-collaboration)
+- [Make File](#makefile)
+- [SNOW KB Publishing](#snow-kb)
+- [Next Steps](#next-steps)
+- [Summary](#summary)
+- [Key Takeaways](#key-takaways)
 
 ---
 
@@ -31,8 +38,8 @@ fonttheme: "professionalfonts"
 
 - Clarity and Alignment: Ensures team members understand goals, processes, and technical details.
 - Scalability: Supports project growth by guiding new contributors.
-- Decision Tracking: Captures the why behind choices, avoiding repeated mistakes.
-- Risk Mitigation: Ensures compliance in regulated industries, reducing risks.
+- Decision Tracking: Captures the _why_ behind choices, avoiding repeated mistakes.
+- Risk Mitigation: Ensures compliance in __regulated industries__, reducing risks.
 
 **Example**: Clear API documentation enables developers to integrate systems without guesswork, saving time.
 
@@ -53,7 +60,7 @@ fonttheme: "professionalfonts"
 
 - Confusion: Ambiguous or missing docs lead to miscommunication and errors.
 - Inefficiency: Teams waste time searching for answers or reverse-engineering existing systems.
-- Knowledge Loss: Departure of key members creates gaps ("\hyperlink{bus-factor}{\textbf{bus factor}}").
+- Knowledge Loss: Departure of key members creates gaps ("[bus-factor](#bus-factor)").
 - Increased Costs: Technical debt accumulates, requiring costly rework.
 
 **Example**: Unclear code without comments forces developers to spend hours deciphering logic.
@@ -80,7 +87,7 @@ It highlights the vulnerability of a project when critical information is held b
 ---
 
 ## Bus Factor (cont)
-Key Points (cont)
+### Key Points (cont)
 
 - Connection to Documentation: Poor documentation often contributes to a low bus factor, as critical information isn’t written down or shared.
 - Good documentation increases the bus factor by ensuring knowledge is accessible to others.
@@ -93,8 +100,7 @@ Key Points (cont)
 ---
 
 ## Bus Factor (cont)
-
-**Example**
+### Example
 In a software project, if only one developer understands the codebase’s architecture and there’s no documentation, the bus factor is 1.
 If that developer leaves or is unavailable, the project could grind to a halt as others struggle to understand the system.
 By contrast, if the architecture is well-documented and multiple team members are familiar with it, the bus factor is higher, and the project is less vulnerable.
@@ -107,11 +113,9 @@ By contrast, if the architecture is well-documented and multiple team members ar
 A low bus factor can lead to delays, increased costs, or project failure when key individuals are unavailable due to illness, departure,
 or other reasons. It underscores the importance of documentation and knowledge sharing, as highlighted in this presentation, to ensure project continuity and resilience.
 
-
 ---
 
-## Collaboration for Effective Documentation
-\hypertarget{collaboration}{}
+## Collaboration for Effective Documentation {#collaboration}
 
 - Accuracy: Multiple perspectives catch errors and fill gaps.
 - Relevance: Tailors content to diverse audiences (e.g., users vs. developers).
@@ -123,8 +127,7 @@ or other reasons. It underscores the importance of documentation and knowledge s
 
 ---
 
-## Enhances User Experience
-\hypertarget{user-experience}{}
+## Enhances User Experience {#user-experience}
 
 - Empowers Users: Clear guides and FAQs enable self-service, reducing support queries.
 - Builds Trust: Professional documentation reflects product quality.
@@ -136,7 +139,7 @@ or other reasons. It underscores the importance of documentation and knowledge s
 
 ---
 
-## Best Practices for Documentation
+## Best Practices for Documentation {#best-practices}
 
 - Clear and Concise: Use simple language and visuals (e.g., diagrams, screenshots).
 - Organized and Searchable: Structure content logically and use searchable platforms.
@@ -148,7 +151,7 @@ or other reasons. It underscores the importance of documentation and knowledge s
 
 ---
 
-## Documentation Life Cycle
+## Documentation Life Cycle {#life-cycle}
 
 ~~~mermaid
 graph TD
@@ -231,7 +234,7 @@ graph TD
 
 ---
 
-## Markdown Benefits Diagram
+## Markdown Benefits Diagram {#benefits-diagram}
 
 ~~~mermaid
 graph TD
@@ -428,13 +431,13 @@ graph LR
     style G fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
 ~~~
 
-- - Host Markdown in GitHub repository.
+- Host Markdown in GitHub repository.
 - Use pull requests for reviews, edits.
 - Track changes, maintain history.
 - Native Markdown/Mermaid rendering.
 
 
-## Step 5: Makefile Conversion Automation
+## Step 5: Makefile Conversion Automation {#makefile}
 
 - Automates conversions, Git operations.
 - Tasks: all, html, push.
@@ -456,7 +459,7 @@ push:
 
 ---
 
-## Step 6: SNOW KB Publishing
+## Step 6: SNOW KB Publishing {#snow-kb}
 
 - Manual: Process Follows:
     - Paste HTML into SNOW KB editor
@@ -548,25 +551,13 @@ graph TD
 ---
 
 ## Key Takeaways
-\hypertarget{key-takeaways}{}
 
 - Documentation is a strategic asset for project success.
 - Enables knowledge sharing, onboarding, and maintenance.
 - Poor documentation causes confusion and inefficiency.
 - Collaboration ensures accuracy and relevance.
 - Enhances user experience and product adoption.
+- Let's Make Documentation A Team Sport!
 
 **Call to Action**: Invest in documentation early and collaboratively to save time, reduce costs, and empower your team and users.  
-
-
----
-
-## Conclusion
-
-- Collaborative Documentation Drives Success.
-- Markdown Ensures Longevity, Provides LLM Integration.
-- VS Code, Pandoc, GitHub, Jenkins Streamline Workflows.
-- Mermaid Diagrams and CSS Themes Enhance Clarity.
-
-**Call to action**: Let’s Make Documentation A Team Sport!  
 

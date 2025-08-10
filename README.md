@@ -188,7 +188,7 @@ graph LR
 - Add other images as Markdown links.
 - Preview diagrams and images in real-time.
 - Commit Changes to GitHub.
-- For Best Results, Rense and Repeat.
+- For Best Results, Rinse and Repeat.
 
 
 ---

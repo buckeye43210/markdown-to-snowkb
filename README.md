@@ -16,6 +16,39 @@ fonttheme: professionalfonts
 
 ---
 
+## Documentation Life Cicle
+
+```mermaid
+graph TD
+    A(Plan<br><i>Document requirements, specs</i>)
+    A --> B(Code<br><i>Document code, APIs</i>)
+    B --> C(Build<br><i>Document build process</i>)
+    C --> D(Test<br><i>Document test cases, results</i>)
+    D --> E(Release<br><i>Document release notes</i>)
+    E --> F(Deploy<br><i>Document deployment steps</i>)
+    F --> G(Operate<br><i>Document operations, runbooks</i>)
+    G --> H(Monitor<br><i>Document metrics, incidents</i>)
+    H --> A
+    classDef planStyle fill:#FFD700,stroke:#333,stroke-width:2px;
+    classDef codeStyle fill:#1E90FF,stroke:#333,stroke-width:2px;
+    classDef buildStyle fill:#32CD32,stroke:#333,stroke-width:2px;
+    classDef testStyle fill:#FF4500,stroke:#333,stroke-width:2px;
+    classDef releaseStyle fill:#9932CC,stroke:#333,stroke-width:2px;
+    classDef deployStyle fill:#00CED1,stroke:#333,stroke-width:2px;
+    classDef operateStyle fill:#FF69B4,stroke:#333,stroke-width:2px;
+    classDef monitorStyle fill:#FFA500,stroke:#333,stroke-width:2px;
+    class A planStyle;
+    class B codeStyle;
+    class C buildStyle;
+    class D testStyle;
+    class E releaseStyle;
+    class F deployStyle;
+    class G operateStyle;
+    class H monitorStyle;
+```
+
+---
+
 ## The Team Sport Mindset
 - Everyone contributes: developers, writers, consumers.
 - Collaborative tools streamline workflows.
@@ -34,11 +67,11 @@ fonttheme: professionalfonts
 ---
 
 ## What is Markdown?
-- **Markdown** is a lightweight markup language.
-- **Decarate** text to add structure and formatting.
-- **WYSIWYM** What You See Is What You Meant.
-- **Formatted Text** determines structure and format.
-- **Platform Independent** Create using any text editor.
+- **Markdown**: A lightweight markup language.
+- **Decarate Text**: Adds structure and formatting.
+- **WYSIWYM**: What You See Is What You Meant.
+- **Formatted Text**: Determines structure and format.
+- **Platform Independent**: Create using any text editor.
 
 ## Benefits of Markdown
 - **Human Readable**: Displayed text easily comprehended.
@@ -55,14 +88,15 @@ fonttheme: professionalfonts
 ## Markdown Benefits Diagram
 ```mermaid
 graph TD
-    A(Legacy Formats)          --> B(Long-Term Readability)
+    A(Markup Formats)          --> B(Long-Term Readability)
     C(LLM: Generate Markdown)  --> D(AI-Enhanced Editing)
     E(GitHub: Render Markdown) --> F(Collaborative Review)
     B --> G(Modern Markdown Use)
     D --> G
     F --> G
-    G --> H(Publish Early, Publish Often)
-    H --> H
+    G --> H(Pandoc, Mermaid, CI/CD)
+    H --> I(Publish Early, Publish Often)
+    I --> I
     
     style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
     style B fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
@@ -307,39 +341,6 @@ sequenceDiagram
     - Perm Decision Tree Builder and FreePlane.
     - Categorize by topic, project, attributes, etc.
     - Result: SNOW KB Mind Map Search Tree.
-
----
-
-## Documentation Life Cicle
-
-```mermaid
-graph TD
-    A(Plan<br><i>Document requirements, specs</i>)
-    A --> B(Code<br><i>Document code, APIs</i>)
-    B --> C(Build<br><i>Document build process</i>)
-    C --> D(Test<br><i>Document test cases, results</i>)
-    D --> E(Release<br><i>Document release notes</i>)
-    E --> F(Deploy<br><i>Document deployment steps</i>)
-    F --> G(Operate<br><i>Document operations, runbooks</i>)
-    G --> H(Monitor<br><i>Document metrics, incidents</i>)
-    H --> A
-    classDef planStyle fill:#FFD700,stroke:#333,stroke-width:2px;
-    classDef codeStyle fill:#1E90FF,stroke:#333,stroke-width:2px;
-    classDef buildStyle fill:#32CD32,stroke:#333,stroke-width:2px;
-    classDef testStyle fill:#FF4500,stroke:#333,stroke-width:2px;
-    classDef releaseStyle fill:#9932CC,stroke:#333,stroke-width:2px;
-    classDef deployStyle fill:#00CED1,stroke:#333,stroke-width:2px;
-    classDef operateStyle fill:#FF69B4,stroke:#333,stroke-width:2px;
-    classDef monitorStyle fill:#FFA500,stroke:#333,stroke-width:2px;
-    class A planStyle;
-    class B codeStyle;
-    class C buildStyle;
-    class D testStyle;
-    class E releaseStyle;
-    class F deployStyle;
-    class G operateStyle;
-    class H monitorStyle;
-```
 
 ---
 

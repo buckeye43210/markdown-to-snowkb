@@ -14,6 +14,7 @@ fonttheme: "professionalfonts"
 - [Enables Knowledge Sharing](#knowledge-sharing-and-onboarding)
 - [Consequences of Poor Documentation](#poor-docs)
 - [The Bus Factor](#bus-factor)
+- [Trained to Make Paper](#make-paper)
 - [Collaboration for Effective Documentation](#collaboration)
 - [Enhances User Experience](#user-experience)
 - [Best Practices](#best-practices)
@@ -108,8 +109,7 @@ It highlights the vulnerability of a project when critical information is held b
 ### Example
 In a software project, if only one developer understands the codebase’s architecture and there’s no documentation, the bus factor is 1.
 If that developer leaves or is unavailable, the project could grind to a halt as others struggle to understand the system.
-By contrast, if the architecture is well-documented and multiple team members are familiar with it, the bus factor is higher, and the project is less vulnerable.
-
+By contrast, if the architecture is well-documented and multiple team members are familiar with it, the bus factor is higher, and the project is less vulnerable.<br>
 
 ---
 
@@ -117,6 +117,37 @@ By contrast, if the architecture is well-documented and multiple team members ar
 
 A low bus factor can lead to delays, increased costs, or project failure when key individuals are unavailable due to illness, departure,
 or other reasons. It underscores the importance of documentation and knowledge sharing, as highlighted in this presentation, to ensure project continuity and resilience.
+
+---
+
+## We've Been Trained To Make Paper {#make-paper}
+
+In Ben Balter's blog post entitled [We've been trained to make paper](https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/)
+He asks the question, "If the internet is the primary medium by which content is consumed, shouldn’t that be the primary medium for which content is prepared?"
+
+| We’ve been trained wrong.
+| We’ve been trained that content creation starts by firing up a desktop word processor — a piece of software, mind you, that still does its best to generate a digital representation of a physical piece of paper — margins, page breaks, and all.
+| Yet this quintessential workplace-place training simply fails to remain relevant in a world where we carry a computer in our pockets at all times.
+| Our training now tells us to create content for the least-likely way it’s consumed: on paper. We’re stuck in an anachronistic workflow.
+
+---
+
+| It’s not uncommon for example, for a team to need to write or edit a document together. Take the typical collaborative publishing process, which generally goes something like this:
+
+1. Draft content in Microsoft Word
+2. Save to shared folder or email around for comments and changes
+3. Manually (and opaquely) reconcile changes one-by-one
+4. Repeat steps 2–3 until satisfied with the document
+5. Convert to web-friendly format
+6. Publish
+
+---
+
+| See what we did there?
+| We’re still writing content for print, and then only once we’re completely done, begin to prepare it for web.
+| That’s broken.
+| That’s like building an entire car, and then at the last minute, deciding it should actually, in fact, be a plane.
+| If the internet is the primary medium by which content is consumed, shouldn’t that be the primary medium for which content is written?
 
 ---
 

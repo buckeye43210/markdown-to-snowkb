@@ -20,13 +20,18 @@ fonttheme: "professionalfonts"
 - [Documentation Life Cycle](#documentation-life-cycle)
 - [Team Sport Mindset](#team-sport-mindset)
 - [Workflow Overview](#workflow-overview)
+
+---
+
+## Overview (cont)
+
 - [Markdown](#markdown)
-- [Mermaid]($mermaid)
-- [VS Code](#vs-code)
-- [Pandoc](#pandoc)
+- [Mermaid Diagrams]($mermaid)
+- [VS Code with Preview](#vs-code)
+- [Pandoc for Conversion](#pandoc)
 - [CSS Styling](#css-styling)
 - [GitHub Collaboration](#github-collaboration)
-- [Make File](#makefile)
+- [Make File Automation](#makefile)
 - [SNOW KB Publishing](#snow-kb)
 - [Next Steps](#next-steps)
 - [Summary](#summary)

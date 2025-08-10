@@ -205,9 +205,9 @@ Common issues with traditional collaboration:
 # Solution: Version Control
 - Invented in the 1970s, widely used by developers.
 - Tracks every change down to the character.
-- Maintains master copy and supports transparent discussions.
+- Maintains master copy, supports transparent discussions.
 - Enables parallel experimentation without conflicts.
-- Free and accessible tools like **GitHub** make for easy adoption.
+- Free and accessible tools like **Git** make for easy adoption.
 
 ---
 

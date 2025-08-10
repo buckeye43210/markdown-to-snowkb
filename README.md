@@ -25,8 +25,8 @@ fonttheme: "professionalfonts"
 
 ## Overview (cont)
 
-- [Markdown](#markdown)
-- [Mermaid Diagrams]($mermaid)
+- [Markdown for Authoring](#markdown)
+- [Mermaid for Diagrams]($mermaid)
 - [VS Code with Preview](#vs-code)
 - [Pandoc for Conversion](#pandoc)
 - [CSS Styling](#css-styling)

@@ -1,7 +1,8 @@
 .PHONY: all pdf beamer html push clean
 
 # Default target
-all: pdf beamer html
+all:
+	 pdf beamer html
 
 # Generate pdf document
 pdf:

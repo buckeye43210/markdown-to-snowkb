@@ -49,7 +49,7 @@ header-includes:
 - Decisions: Tracks "why" to avoid repeated errors.
 - Risks: Ensures compliance in regulated fields.
 
-**Tech Example**: API docs enable seamless integration, cut debug time.
+**Example**: API docs enable seamless integration, cut debuging.
 
 ---
 
@@ -60,7 +60,7 @@ header-includes:
 - Aids maintenance: Simplifies troubleshooting.
 - Future-proofs: Preserves knowledge amid changes.
 
-**Tech Example**: README with setup scripts onboards engineers fast.
+**Example**: README with examples onboards engineers quickly.
 
 ---
 
@@ -71,7 +71,7 @@ header-includes:
 - Knowledge loss: Gaps when experts leave (bus factor).
 - Costs: Builds technical debt, rework.
 
-**Tech Example**: Undocumented code wastes hours on logic decoding.
+**Example**: Undocumented code wastes hours on logic decoding.
 
 ---
 
@@ -83,19 +83,34 @@ header-includes:
 - Link to Docs: Poor docs lower factor; good docs raise it.
 
 **Mitigation**:
+
 - Document processes/code/decisions.
 - Cross-train teams.
 - Use wikis/Git repos.
-- Pair programming/reviews.
+- Pair programming/code reviews.
 
-**Tech Example**: Solo architect knowledge → Factor 1; Documented + shared → Higher resilience.
+**Example**:
+
+~~~mermaid
+graph TD
+    A[Architecture Knowledge] -->|Solo| B[Bus Factor 1] --> C[High Vulnerability]
+    A -->|Documented & Shared| D[Higher Bus Factor] --> E[Resilience]
+
+    classDef neutral fill:#f9e79f,stroke:#333,stroke-width:2px;
+    classDef low fill:#f5b7b1,stroke:#333,stroke-width:2px;
+    classDef high fill:#a9dfbf,stroke:#333,stroke-width:2px;
+
+    class A neutral;
+    class B,C low;
+    class D,E high;
+~~~
 
 ---
 
 # We've Been Trained for Paper
 
 **Credit**: Ben Balter (2012)  
-**Source**: [https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/](https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/)
+**Source**: [We've been trained to make paper/](https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/)
 
 - Trained for print, not web/digital.
 - Tools (e.g., Word): 1980s print focus (margins, breaks); weak on hyperlinks, responsiveness.
@@ -192,7 +207,7 @@ graph TD
 - Improvement: Git/wikis for updates.
 - Ownership: Shared maintenance.
 
-**Tech Example**: Cross-team wiki ensures comprehensive docs.
+**Example**: Cross-team wiki ensures comprehensive docs.
 
 ---
 

@@ -6,6 +6,8 @@ date: "13 Aug 2025"
 theme: "PaloAlto"
 colortheme: "whale"
 fonttheme: "professionalfonts"
+header-includes:
+  - \usepackage{hyperref}
 ---
 
 ## Documentation Overview
@@ -122,34 +124,130 @@ or other reasons. It underscores the importance of documentation and knowledge s
 
 ## We've Been Trained To Make Paper {#make-paper}
 
-In Ben Balter's blog post entitled [We've been trained to make paper](https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/)
-He asks the question, "If the internet is the primary medium by which content is consumed, shouldn’t that be the primary medium for which content is prepared?"
 
-| We’ve been trained wrong.
-| We’ve been trained that content creation starts by firing up a desktop word processor — a piece of software, mind you, that still does its best to generate a digital representation of a physical piece of paper — margins, page breaks, and all.
-| Yet this quintessential workplace-place training simply fails to remain relevant in a world where we carry a computer in our pockets at all times.
-| Our training now tells us to create content for the least-likely way it’s consumed: on paper. We’re stuck in an anachronistic workflow.
 
----
-
-| It’s not uncommon for example, for a team to need to write or edit a document together. Take the typical collaborative publishing process, which generally goes something like this:
-
-1. Draft content in Microsoft Word
-2. Save to shared folder or email around for comments and changes
-3. Manually (and opaquely) reconcile changes one-by-one
-4. Repeat steps 2–3 until satisfied with the document
-5. Convert to web-friendly format
-6. Publish
+# We've Been Trained to Make Paper
+## Reimagining Content Creation for the Web
+**Author**: Credit to Ben Balter (2012)  
+**Source**: [https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/](https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/)  
+**Date**: August 10, 2025
 
 ---
 
-| See what we did there?
-| We’re still writing content for print, and then only once we’re completely done, begin to prepare it for web.
-| That’s broken.
-| That’s like building an entire car, and then at the last minute, deciding it should actually, in fact, be a plane.
-| If the internet is the primary medium by which content is consumed, shouldn’t that be the primary medium for which content is written?
+# The Problem with Traditional Workflows
+- We've been trained to create content for **paper**, not the web.
+- Traditional tools like Microsoft Word prioritize print-centric features:
+  - Margins, page breaks, and physical layout.
+  - Limited support for web features like hyperlinks or mobile responsiveness.
+- Most documents today are consumed digitally, not physically.
 
 ---
+
+# A Broken Collaborative Process
+Typical document collaboration workflow:
+1. Draft in Microsoft Word.
+2. Share via email or shared folder.
+3. Manually reconcile changes.
+4. Repeat until finalized.
+5. Convert to web-friendly format.
+6. Publish.
+
+~~~mermaid
+graph TD
+    A[Draft in Microsoft Word] --> B[Share via email or shared folder]
+    B --> C[Manually reconcile changes]
+    C -->|Repeat until finalized| C
+    C --> D[Convert to web-friendly format]
+    D --> E[Publish]
+
+    classDef draft fill:#f9e79f,stroke:#333,stroke-width:2px;
+    classDef share fill:#a9dfbf,stroke:#333,stroke-width:2px;
+    classDef reconcile fill:#f5b7b1,stroke:#333,stroke-width:2px;
+    classDef convert fill:#a3e4d7,stroke:#333,stroke-width:2px;
+    classDef publish fill:#d2b4de,stroke:#333,stroke-width:2px;
+
+    class A draft;
+    class B share;
+    class C reconcile;
+    class D convert;
+    class E publish;
+~~~
+
+**Problem**: Content is prepared for print, then retrofitted for the web.
+
+---
+
+# Why Print-Centric Tools Fail
+- Microsoft Word was designed in the 1980s for **physical documents**.
+- Features like margins and page breaks are irrelevant for digital content.
+- Web-specific needs (e.g., mobile responsiveness, machine-readability) are poorly supported.
+- Proprietary formats (e.g., .doc) lock content in complex, inaccessible structures.
+
+---
+
+# Collaboration Challenges
+Common issues with traditional collaboration:
+- Confusing file names (e.g., `foo-document_2012_10_15_final2.doc`).
+- No clear version history or context for changes.
+- Questions like: Who made this change? Was my edit accepted? Can we edit simultaneously?
+- No easy way to experiment with parallel versions.
+
+---
+
+# The Solution: Version Control
+- Invented in the 1970s, widely used by developers.
+- Tracks every change down to the character.
+- Maintains a master copy and supports transparent discussions.
+- Enables parallel experimentation without conflicts.
+- Free and accessible tools like **Git** make it easy to adopt.
+
+---
+
+# Breaking Free from Proprietary Formats
+- Proprietary formats (e.g., .doc) mix content with formatting instructions.
+- Result: Complex, inaccessible files that require specific software.
+- Analogy: Getting water by filtering a can of Coke through a Brita.
+- Solution: Focus on **pure content** using open, text-based formats like **Markdown**.
+
+---
+
+# A Web-First Workflow
+To create content for the web:
+1. Use **Markdown** for simple, text-based content creation.
+2. Adopt **Git** and platforms like **GitHub** for collaboration.
+3. Tools to start:
+   - **GitHub Desktop** for version control.
+   - **Mou** for Markdown editing.
+4. Create a repository and collaborate seamlessly.
+
+~~~mermaid
+graph TD
+    A[Use Markdown for content creation] --> B[Adopt Git and GitHub for collaboration]
+    B --> C[Use tools: GitHub Desktop, Mou]
+    C --> D[Create repository and collaborate]
+
+    classDef markdown fill:#f9e79f,stroke:#333,stroke-width:2px;
+    classDef git fill:#a9dfbf,stroke:#333,stroke-width:2px;
+    classDef tools fill:#f5b7b1,stroke:#333,stroke-width:2px;
+    classDef repo fill:#a3e4d7,stroke:#333,stroke-width:2px;
+
+    class A markdown;
+    class B git;
+    class C tools;
+    class D repo;
+~~~    
+
+---
+
+# Conclusion: Stop Making Paper
+- Shift from print-first to **web-first** content creation.
+- Embrace modern tools for collaboration and version control.
+- Break the habit of using outdated, print-centric software.
+- Start today: Learn Markdown, use Git, and focus on **content**.
+
+**Credit**: Ben Balter, 2012 [](https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/)nly distribution, the time is ripe for a more evolved, text-centric, distributed workflow to become mainstream. Stop making paper, start collaborating.
+
+
 
 ## Collaboration for Effective Documentation {#collaboration}
 

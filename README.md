@@ -354,12 +354,20 @@ graph LR
 ```mermaid
 graph TD
     A(Markup Formats)
-    A --> B(Long-Term Readability)
-    C(LLM Generate)  --> D(AI Editing)
-    E(GitHub Render) --> F(Collab Review)
-    B --> G(Publish Early And Often)
-    D --> G
-    F --> G
+    B(Long-Term<br> Readability)
+    C(LLM Draft)
+    D(Human Editing)
+    E(GitHub Hosting)
+    F(Collaberative<br> Review)
+    G(Publish Early And Often)
+    A  --> B
+    C  --> D
+    E  --> F
+    B  --> G
+    D  --> G
+    F  --> G
+    A -.-> D
+    D -.-> E
 
     style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
     style B fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px

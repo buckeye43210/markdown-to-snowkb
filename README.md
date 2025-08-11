@@ -534,9 +534,9 @@ make all
 sequenceDiagram
     Jenkins->>Creds: Fetch
     Creds-->>Jenkins: Return
-    Jenkins->>Jenkins: make html
+    Jenkins->>Jenkins: render html
     Jenkins->>SNOW KB API: POST JSON
-    SNOW API-->>Jenkins: Confirm
+    SNOW KB API-->>Jenkins: Confirm
 ```
 
 ---

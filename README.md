@@ -359,17 +359,12 @@ graph TD
 
 ---
 
-## Mermaid: Diagram Description Language
-
-- **Text-based**: Simple syntax.
-- **Like Markdown**: Portable, editor-agnostic.
-- **Embed in MD**: Renders to graphics/SVG (clickable).
-- **Supported**: GitHub, Pandoc, VS Code.
+## Mermaid: Mind Map
 
 ```mermaid
 mindmap
-  root((Mermaid))
-    (Diagram Language)
+  root(Mermaid)
+    (Diagram Description Language)
       Simple syntax
       Many types
     (Like Markdown)
@@ -379,7 +374,7 @@ mindmap
       Future-proof
     (Embed in MD)
       Render graphics
-      SVG links
+      SVG with links
     (Adopted)
       Lucid
       GitHub

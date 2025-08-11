@@ -9,6 +9,7 @@ colortheme: "whale"
 fonttheme: "professionalfonts"
 navigation: frame
 header-includes:
+- \usepackage[en-AU]{datetime2}
 - \usepackage{hyperref}
 hyperrefoptions:
 colorlinks: true
@@ -21,13 +22,13 @@ urlcolor: blue
 
 - Backbone of Projects
 - Knowledge Sharing
-- Pitfalls of Poor Docs
+- Pitfalls of Poor Documents
 - Bus Factor Risks
 - Trained for Paper (Issue)
 - Collaboration Benefits
 - User Experience Boost
-- Best Practices
-- Life Cycle
+- Document Best Practices
+- Document Life Cycle
 - Team Sport Mindset
 - Workflow Tools
 
@@ -216,15 +217,16 @@ graph LR
 **Web-first flow**:
 
 1. **Markdown**: Text-based content.
-2. **Git/GitHub**: Collab, control.
-3. **Tools**: VS Code (edit), Git CLI.
-4. **Repo**: Create, collaborate.
+2. **Tools**: VS Code (edit).
+3. **Git**: Version control.
+4. **Git Repo**: Review, collaborate.
 
 ```mermaid
 graph LR
-    A(Markdown content) --> B(Git/GitHub collab)
-    B --> C(VS Code/Git CLI tools)
-    C --> D(Repo create/collaborate)
+    A(Markdown content)
+    A --> B(VS Code)
+    B --> C(Git version control)
+    C --> D(Git Repo)
 
     classDef markdown fill:#f9e79f,stroke:#333,stroke-width:2px;
     classDef git fill:#a9dfbf,stroke:#333,stroke-width:2px;
@@ -238,7 +240,7 @@ graph LR
 ```
 
 - **Shift**: Web-first; pure content in Markdown.
-- **Break** proprietary traps: focus essence.
+- **Break** proprietary traps: focus on document essence.
 
 **Credit**: Ben Balter (2012).
 

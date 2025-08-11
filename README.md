@@ -528,6 +528,8 @@ make all
 
 ---
 
+## Jenkins CI/CD Pipeline Example
+
 ```mermaid
 sequenceDiagram
     Jenkins->>Creds: Fetch

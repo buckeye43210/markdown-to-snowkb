@@ -246,6 +246,29 @@ graph LR
 
 ---
 
+## The Big Picture
+
+```mermaid
+graph TD
+    A(Team Sport<br> Mentality)
+    A --> B(Longevity)
+    A --> C(Automated Workflows)
+    A --> D(Clarity)
+    B --> E(Documentation<br> Collaboration)
+    C --> E
+    D --> E
+    E --> F(Project Success)
+
+    style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
+    style B fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
+    style C fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
+    style D fill:#2E8B57,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
+    style E fill:#20B2AA,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
+    style F fill:#20B2AA,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
+```
+
+---
+
 ## Collaboration Benefits
 
 **Teams Deliver**:

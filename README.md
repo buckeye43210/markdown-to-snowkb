@@ -186,7 +186,7 @@ graph LR
 ```text
 **Hello World!**
 ```
-**This is your documentation on Word**
+Documentation on Word
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <w:document xmlns:w="http://schemas.openxmlformats.org/...">
@@ -202,7 +202,7 @@ graph LR
     </w:body>
 </w:document>
 ```
-**Any Questions?**
+Any Questions?
 
 ---
 

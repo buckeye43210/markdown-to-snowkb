@@ -366,7 +366,6 @@ graph TD
     B  --> G
     D  --> G
     F  --> G
-    A -.-> D
     D -.-> E
 
     style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF

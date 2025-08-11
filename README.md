@@ -543,11 +543,11 @@ sequenceDiagram
 
 ## Next Steps
 
-- **CI/CD Pipeline**: Jenkins POC to automatically render and publish Markdown.
+- **CI/CD Pipeline**: Jenkins POC to automatically render and publish.
 - **Alt CI/CD**: Enable GitHub Actions for simpler automation.
 - **Leverage AI**: Drafts, templates, classification taxonomy.
 - **Investigare**: Process improvements.
-- **Indexing**: Leverage Decision trees, FreePlane mind maps; categorize topics/attributes.
+- **Indexing**: Leverage Decision trees, mind maps; categorize attributes.
 
 ---
 

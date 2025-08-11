@@ -336,8 +336,8 @@ graph LR
 **Team Sports Mindset**
 
 - **All members contribute**: Devs, writers, users.
-- **Tools**: Streamline collaboration.
-- **Versioning/Automation**: Efficiency.
+- **Tools**: To Streamline collaboration.
+- **Versioning/Automation**: Provide efficiency.
 - **Goal**: Accurate, living, maintainable docs.
 
 **Workflow Overview**

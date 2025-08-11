@@ -386,7 +386,7 @@ mindmap
     (Diagram Description Language)
       Simple syntax
       Many types
-    (Like Markdown)
+    (Markdown Similarities)
       Portable
       Agnostic
       Any editor

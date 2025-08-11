@@ -181,12 +181,9 @@ graph LR
 
 ---
 
-## Markdown vs Word XML
+## Markdown -- `**Hello World!**` vs Word XML
 
-```text
-**Hello World!**
-```
-Documentation on Word
+**Documentation on Word**
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <w:document xmlns:w="http://schemas.openxmlformats.org/...">
@@ -202,7 +199,7 @@ Documentation on Word
     </w:body>
 </w:document>
 ```
-Any Questions?
+**Any Questions?**
 
 ---
 

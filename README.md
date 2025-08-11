@@ -20,7 +20,7 @@ urlcolor: blue
 
 ## Overview
 
-- Backbone of Projects
+- Project Backbone
 - Knowledge Sharing
 - Pitfalls of Poor Documents
 - Bus Factor Risks
@@ -50,11 +50,11 @@ urlcolor: blue
 
 ---
 
-## Documentation: Backbone of Success
+## Documentation: Successful Project Backbone
 
-- **Clarity:** Aligns team on goals, processes, tech details.
+- **Clarity:** Aligns team goals, processes, tech details.
 - **Scalability:** Guides new contributors as projects grow.
-- **Decisions:** Tracks "why" to avoid repeated errors.
+- **Decisions:** Tracks "*the why*" to avoid repeated errors.
 - **Risks:** Ensures compliance in regulated fields.
 
 **Example**: API docs enable seamless integration, reduces debugging.
@@ -64,15 +64,15 @@ urlcolor: blue
 ## Knowledge Sharing & On-boarding
 
 - **Democratizes info:** Reduces expert dependency.
-- **Speeds on-boarding:** Quick grasp of workflows/tools.
+- **Speeds on-boarding:** Quickly grasp workflows/tools.
 - **Aids maintenance:** Simplifies troubleshooting.
 - **Future-proofs:** Preserves knowledge amid changes.
 
-**Example**: README with examples onboards engineers quickly.
+**Example**: README with examples onboards engineers more quickly.
 
 ---
 
-## Pitfalls of Poor Documentation
+## Poor Documentation Pitfalls
 
 - **Confusion:** Leads to errors, miscommunication.
 - **Inefficiency:** Time wasted reverse-engineering.
@@ -121,13 +121,13 @@ graph LR
 **Credit**: Ben Balter (2012)  
 **Source**: [We've been trained to make paper](https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/)
 
-- Trained for print, not web/digital.
+- Trained for printed paper, not web/digital.
 - Word: 1980s print focus (margins, breaks); weak on hyperlinks, responsiveness.
 - Digital dominance: Most documentation consumed online.
 
 ---
 
-## Flawed Workflow in Paper Tools
+## Flawed Paper Tools Workflow
 
 ### Legacy process:
 
@@ -166,7 +166,7 @@ graph LR
 
 ---
 
-## Why Print Tools Fail Technically
+## Print Tools Technical Failure
 
 **Word Attributes**:
 
@@ -186,7 +186,7 @@ graph LR
 ```text
 **Hello World!**
 ```
-
+**This is your documentation on Word**
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <w:document xmlns:w="http://schemas.openxmlformats.org/...">
@@ -203,7 +203,7 @@ graph LR
 </w:document>
 ```
 
-### Any Questions?
+**Any Questions?**
 
 ---
 
@@ -514,9 +514,9 @@ graph LR
 - Example:
 
 ```makefile
-.PHONY: all html push
+.PHONY: all push html
 
-all: html push
+all: push html
 
 html: 
 	pandoc -F mermaid-filter -s --css=my.css in.md -o in.html
@@ -527,7 +527,7 @@ push:
 
 - Run:
 ```bash
-make all
+make
 ```
 
 ---

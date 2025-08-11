@@ -580,7 +580,7 @@ graph TD
 - **Avoid pitfalls**: Confusion, costs.
 - **Collaboration**: Accuracy, improved user experience.
 - **Mindset**: Team Sport.
-- **Tools**: Markdown, Mermaid, Git, Pandoc, Automation.
+- **Tools**: Markdown, Mermaid, VS Code, Pandoc, GitHub, Automation.
 
 **Action**:
 

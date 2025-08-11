@@ -297,12 +297,10 @@ graph TD
 - **Templated**: Standardized (READMEs, SOPs, APIs).
 - **Tested**: User validated.
 
----
-
-## Documentation Life Cycle
+**Documentation Life Cycle**
 
 ```mermaid
-graph TD
+graph LR
     A(Plan: Requirements/specs) --> B(Code: Code/APIs)
     B --> C(Build: Processes)
     C --> D(Test: Cases/results)

@@ -356,7 +356,7 @@ graph TD
     A(Markup Formats)
     B(Long-Term<br> Readability)
     C(LLM Draft)
-    D(Humans)
+    D(Human Edit)
     E(GitHub Hosting)
     F(Collaberative<br> Review)
     G(Publish Early And Often)
@@ -366,7 +366,6 @@ graph TD
     B  --> G
     D  --> G
     F  --> G
-    D -.-> F
 
     style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
     style B fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px

@@ -555,11 +555,11 @@ sequenceDiagram
 
 ```mermaid
 graph TD
-    A(Documentation<br> Collaboration)
+    A(Team Sport<br> Mentality)
     A --> B(Longevity)
     A --> C(Workflows)
     A --> D(Clarity)
-    B --> E(Team Mentality)
+    B --> E(Documentation<br> Collaboration)
     C --> E
     D --> E
     E --> F(Project Success)

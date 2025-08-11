@@ -1,22 +1,22 @@
-.PHONY: all pdf beamer html push clean
+# Define phony targets
+.PHONY: all pdf beamer html lint push clean
 
 # Default target
-all:
-	 pdf beamer html lint
+all: push beamer
 
-# Generate pdf document
+# Generate PDF document
 pdf:
 	pandoc -F mermaid-filter -t pdf README.md -o output.pdf --pdf-engine=xelatex
 
-# Generage beamer slides
+# Generate Beamer slides
 beamer:
 	pandoc -F mermaid-filter -t beamer README.md -o slides.pdf --pdf-engine=xelatex
 
-# Generate html output
+# Generate HTML output
 html:
 	pandoc -F mermaid-filter --standalone --css=styles.css README.md -o output.html
 
-# Check spelling 
+# Check spelling
 lint:
 	aspell check README.md
 

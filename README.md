@@ -557,7 +557,7 @@ sequenceDiagram
 graph TD
     A(Team Sport<br> Mentality)
     A --> B(Longevity)
-    A --> C(Workflows)
+    A --> C(Automated Workflows)
     A --> D(Clarity)
     B --> E(Documentation<br> Collaboration)
     C --> E

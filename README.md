@@ -181,7 +181,7 @@ graph LR
 
 ---
 
-## Markdown vs Word XML -- This is your documentation:
+## Markdown vs Word XML
 
 ```text
 **Hello World!**
@@ -202,7 +202,6 @@ graph LR
     </w:body>
 </w:document>
 ```
-
 **Any Questions?**
 
 ---

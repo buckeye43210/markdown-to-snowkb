@@ -462,11 +462,11 @@ pandoc -F mermaid-filter --css=style.css in.md -o out.html
 
 ```mermaid
 graph LR
-    A(Edit Markdown) --> B(Push Branch)
+    A(Edit Markdown) --> B(Push to Branch)
     B --> C(Pull Request)
     C --> D(Review)
     D --> E{Approved?}
-    E -->|Yes| F(Merge Main)
+    E -->|Yes| F(Merge w/ Main)
     E -->|No| A
     F --> G(Publish)
 
@@ -479,8 +479,8 @@ graph LR
     style G fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
 ```
 
-- **Repo hosted**: Track changes.
-- **Pull Request**: Reviews/edits.
+- **Repo hosted**: Change Tracking.
+- **Pull Request**: Reviews/Approves.
 - **Preview**: Native Markdown and Mermaid rendering.
 
 ---
@@ -512,18 +512,18 @@ make all
 ## Step 6: SNOW KB Publishing
 
 - **Manual**:
-    - Paste HTML
-    - Update
-    - Preview
+    - Paste HTML </>
+    - Update KB
+    - Preview KB
     - Upload images
-    - Submit for review
+    - Submit KB for review
 - **Auto**: Jenkins CI/CD
     - Checkout
     - Build (make html)
     - POST to API
     - Secrets: Jenkins Credentials
 - **Alternatives**:
-    - Makefile, curl, KeePass
+    - Makefile, Curl, KeePass
     - GitHub Actions (YAML workflow, API POST)
 
 ---
@@ -533,7 +533,7 @@ sequenceDiagram
     Jenkins->>Creds: Fetch
     Creds-->>Jenkins: Return
     Jenkins->>Jenkins: make html
-    Jenkins->>SNOW API: POST JSON
+    Jenkins->>SNOW KB API: POST JSON
     SNOW API-->>Jenkins: Confirm
 ```
 

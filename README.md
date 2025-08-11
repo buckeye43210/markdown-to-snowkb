@@ -255,7 +255,7 @@ graph LR
 - **Improvement**: Git/wikis for updates.
 - **Ownership**: Shared maintenance.
 
-**Example**: Cross-team wiki ensures comprehensive docs.
+**Example**: Cross-team document store ensures comprehensive docs.
 
 ---
 
@@ -268,7 +268,7 @@ graph LR
 - **Reduces errors**: Intuitive instructions.
 - **Adoption**: Easy learning boosts uptake.
 
-**Example**: SOP slashes ticket count.
+**Example**: SOP reducing ticket count.
 
 ---
 
@@ -337,11 +337,6 @@ graph TD
 ---
 
 ## Markdown: Core Authoring
-
-- **Lightweight markup**: Structured text.
-- **WYSIWYM**: Meaning-focused.
-- **Benefits**: Readable, durable, GitHub-rendered.
-- **Reality**: Word processors fade; Markdown endures.
 
 ```mermaid
 graph TD

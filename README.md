@@ -276,18 +276,14 @@ graph TD
 
 **Example**: Cross-team document store ensures comprehensive docs.
 
----
-
-## User Experience Enhancement
-
 **Benefits**:
 
-- **Empowers**: Self-service guides reduce support dependencies.
+- **Empowerment**: Self-service guides reduce support dependencies.
 - **Trust**: Professional documents reflect quality.
-- **Reduces errors**: Intuitive instructions.
+- **Reduced errors**: Intuitive instructions.
 - **Adoption**: Easy learning boosts uptake.
 
-**Example**: SOP reducing ticket count.
+**Example**: Relevent SOP reducing ticket count.
 
 ---
 

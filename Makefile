@@ -2,7 +2,7 @@
 
 # Default target
 all:
-	 pdf beamer html
+	 pdf beamer html lint
 
 # Generate pdf document
 pdf:
@@ -15,6 +15,10 @@ beamer:
 # Generate html output
 html:
 	pandoc -F mermaid-filter --standalone --css=styles.css README.md -o output.html
+
+# Check spelling 
+lint:
+	aspell check README.md
 
 # Push changes to GitHub
 push:

@@ -56,14 +56,14 @@ urlcolor: blue
 - **Decisions:** Tracks "why" to avoid repeated errors.
 - **Risks:** Ensures compliance in regulated fields.
 
-**Example**: API docs enable seamless integration, reduces debugging.
+**Example**: API docs enable seamless integration, reduces debuging.
 
 ---
 
-## Knowledge Sharing & On-boarding
+## Knowledge Sharing & Onboarding
 
 - **Democratizes info:** Reduces expert dependency.
-- **Speeds on-boarding:** Quick grasp of workflows/tools.
+- **Speeds onboarding:** Quick grasp of workflows/tools.
 - **Aids maintenance:** Simplifies troubleshooting.
 - **Future-proofs:** Preserves knowledge amid changes.
 
@@ -237,8 +237,8 @@ graph LR
     class D repo;
 ```
 
-- **Shift**: Web-first; pure content in Markdown.
-- **Break** proprietary traps: focus essence.
+- **Shift: Web-first; pure content in Markdown.
+- **Break proprietary traps; focus essence.
 
 **Credit**: Ben Balter (2012).
 
@@ -246,9 +246,7 @@ graph LR
 
 ## Collaboration Benefits
 
-**Teams Deliver**:
-
-- **Accuracy**: Multi-perspectives identify documentation gaps.
+- **Accuracy**: Multi-perspectives catch gaps.
 - **Relevance**: Tailors for devs/users.
 - **Improvement**: Git/wikis for updates.
 - **Ownership**: Shared maintenance.
@@ -259,10 +257,8 @@ graph LR
 
 ## User Experience Enhancement
 
-**Benefits**:
-
-- **Empowers**: Self-service guides reduce support dependencies.
-- **Trust**: Professional documents reflect quality.
+- **Empowers**: Self-service guides cut support.
+- **Trust**: Pro docs reflect quality.
 - **Reduces errors**: Intuitive instructions.
 - **Adoption**: Easy learning boosts uptake.
 
@@ -272,13 +268,11 @@ graph LR
 
 ## Best Practices
 
-**Good Documentation**:
-
 - **Concise**: Simple language, visuals.
 - **Organized**: Logical structure, searchable.
-- **Updated**: Living docs, with assigned owners.
-- **Templated**: Standardized (READMEs, SOPs, APIs).
-- **Tested**: User validated.
+- **Updates**: Living docs, owners assigned.
+- **Templates**: Standardize (README, SOPs, APIs).
+- **Test**: Validate with users.
 
 ---
 
@@ -318,10 +312,10 @@ graph TD
 
 ## Team Sport Mindset
 
-- **All members contribute**: Devs, writers, users.
+- **All contribute**: Devs, writers, users.
 - **Tools**: Streamline collaboration.
 - **Versioning/Automation**: Efficiency.
-- **Goal**: Accurate, living, maintainable docs.
+- **Goal**: Living, maintainable docs.
 
 ---
 
@@ -339,7 +333,7 @@ graph TD
 - **Lightweight markup**: Structured text.
 - **WYSIWYM**: Meaning-focused.
 - **Benefits**: Readable, durable, GitHub-rendered.
-- **Reality**: Word processors fade; Markdown endures.
+- **History**: Word processors fade; Markdown endures.
 
 ```mermaid
 graph TD
@@ -549,10 +543,10 @@ sequenceDiagram
 
 ## Next Steps
 
-- **CI/CD Pipeline**: Jenkins POC to automatically render and publish Markdown.
-- **Alt CI/CD**: Enable GitHub Actions for simpler automation.
-- **Leverage AI**: Drafts, templates, classification taxonomy.
-- **Investigare**: Process improvements.
+- **PoC**: Jenkins auto-publish.
+- Enable GitHub Actions for CI/CD.
+- Expand AI: Drafts, taxonomy.
+- Improve CSS.
 - **Indexing**: Leverage Decision trees, FreePlane mind maps; categorize topics/attributes.
 
 ---
@@ -582,13 +576,13 @@ graph TD
 
 ## Key Takeaways
 
-- **Strategic asset**: Sharing, on-boarding, maintenance.
+- **Strategic asset**: Sharing, onboarding, maintenance.
 - **Avoid pitfalls**: Confusion, costs.
-- **Collaboration**: Accuracy, improved user experience.
+- **Collaboration**: Accuracy, UX boost.
 - **Mindset**: Team Sport.
 - **Tools**: Markdown, Mermaid, Git, Pandoc, Automation.
 
 **Action**:
 
-- **Invest**: Retool legacy document workflows.
-- **ROI**: Repeatable processes, reduced time, effort and empowered teams.
+- **Invest**: In retooling document workflows.
+- **ROI**: Time saved, empowered teams.

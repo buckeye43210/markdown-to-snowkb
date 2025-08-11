@@ -555,7 +555,7 @@ sequenceDiagram
 
 ```mermaid
 graph TD
-    A(Collab Docs)
+    A(Documentation<br> Collaboration)
     A --> B(Longevity)
     A --> C(Workflows)
     A --> D(Clarity)

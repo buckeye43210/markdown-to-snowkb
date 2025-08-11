@@ -331,16 +331,16 @@ graph LR
 
 ---
 
-## Team Sport Mindset
+## Process Workflow
+
+**Team Sports Mindset**
 
 - **All members contribute**: Devs, writers, users.
 - **Tools**: Streamline collaboration.
 - **Versioning/Automation**: Efficiency.
 - **Goal**: Accurate, living, maintainable docs.
 
----
-
-## Workflow Overview
+**Workflow Overview**
 
 - **Input**: SMEs, feedback.
 - **Tools**: VS Code, Markdown, Mermaid, Pandoc, GitHub.

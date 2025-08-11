@@ -3,11 +3,18 @@ title: "Documentation: A Team Sport"
 subtitle: "Collaborative Environment for Document Publication"
 author: "Rick Holbert"
 date: \today
+aspectratio: 1610
 theme: "PaloAlto"
 colortheme: "whale"
 fonttheme: "professionalfonts"
+navigation: frame
 header-includes:
-  - \usepackage{hyperref}
+- \usepackage{hyperref}
+hyperrefoptions:
+colorlinks: true
+linkcolor: green
+urlcolor: blue
+
 ---
 
 ## Overview
@@ -49,7 +56,7 @@ header-includes:
 - Decisions: Tracks "why" to avoid repeated errors.
 - Risks: Ensures compliance in regulated fields.
 
-**Example**: API docs enable seamless integration, cut debuging.
+**Example**: API docs enable seamless integration, reduces debuging.
 
 ---
 
@@ -89,8 +96,6 @@ header-includes:
 - Use wikis/Git repos.
 - Pair programming/code reviews.
 
-**Example**:
-
 ```mermaid
 graph LR
     A(Architecture Knowledge)
@@ -113,7 +118,7 @@ graph LR
 ## We've Been Trained for Paper
 
 **Credit**: Ben Balter (2012)  
-**Source**: [We've been trained to make paper/](https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/)
+**Source**: [We've been trained to make paper](https://ben.balter.com/2012/10/19/we-ve-been-trained-to-make-paper/)
 
 - Trained for print, not web/digital.
 - Tools (e.g., Word): 1980s print focus (margins, breaks); weak on hyperlinks, responsiveness.
@@ -164,12 +169,36 @@ graph LR
 - Complex (.docx): Mixes content/formatting.
 - Analogy: Water from filtered Coke – inefficient.
 
-Show Word "Hello World" XML vs Markdown "Hello World" code blocks.
-
 **Challenges**:
 
-- File chaos: `doc_2012_final2.docx`.
-- No history: Unclear edits, no simultaneous work, no branches.
+- File name chaos: `doc_2012_final2.docx`.
+- Messy history: Unclear edits, no simultaneous work, no branches.
+
+---
+
+## Markdown vs Word XML -- This is your documentation:
+
+```text
+**Hello World!**
+```
+
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document xmlns:w="http://schemas.openxmlformats.org/...">
+    <w:body>
+        <w:p>
+            <w:r>
+                <w:rPr>
+                    <w:b/>
+                </w:rPr>
+                <w:t>Hello World!</w:t>
+            </w:r>
+        </w:p>
+    </w:body>
+</w:document>
+```
+
+### Any Questions?
 
 ---
 

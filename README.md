@@ -12,7 +12,7 @@ header-includes:
 - \usepackage{hyperref}
 hyperrefoptions:
 colorlinks: true
-linkcolor: gray
+linkcolor: white
 urlcolor: blue
 
 ---

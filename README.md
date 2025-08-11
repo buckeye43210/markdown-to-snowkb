@@ -356,7 +356,7 @@ graph TD
     A(Markup Formats)
     B(Long-Term<br> Readability)
     C(LLM Draft)
-    D(Human Edit)
+    D(Edit)
     E(GitHub Hosting)
     F(Collaberative<br> Review)
     G(Publish Early And Often)

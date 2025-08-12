@@ -168,11 +168,11 @@ graph LR
 
 ## Print Tools Technical Failure
 
-**Word Attributes**:
+**Analogy**: Water from filtered Coke – inefficient.
 
-- **Word**: Physical focus; web as a second thought.
-- **Complex XML**: Mixes content/formatting.
-- **Analogy**: Water from filtered Coke – inefficient.
+![Filtering Coke](images/coke_filter.jpg)
+
+---
 
 **Challenges**:
 

@@ -181,9 +181,15 @@ graph LR
 
 ---
 
-## Markdown -- `**Hello World!**` vs Word XML
+## **Hello World! in Markdown
 
-**Documentation on Word**
+```text
+**Hello World!***
+```
+
+---
+
+## **Hello World** in MS Word
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <w:document xmlns:w="http://schemas.openxmlformats.org/...">

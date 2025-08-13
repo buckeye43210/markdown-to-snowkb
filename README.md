@@ -166,9 +166,7 @@ graph LR
 
 ---
 
-## Print Tools Technical Failure
-
-**Analogy**: Water from filtered Coke is inefficient.
+## Analogy: Water from filtered Coke is inefficient.
 
 ![Filtering Coke](images/coke_filter.jpg)
 

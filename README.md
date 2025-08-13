@@ -57,30 +57,6 @@ urlcolor: blue
 - **Decisions:** Tracks "*the why*" to avoid repeated errors.
 - **Risks:** Ensures compliance in regulated fields.
 
-**Example**: API docs enable seamless integration, reduces debugging.
-
----
-
-## Knowledge Sharing & On-boarding
-
-- **Democratizes info:** Reduces expert dependency.
-- **Speeds on-boarding:** Quickly grasp workflows/tools.
-- **Aids maintenance:** Simplifies troubleshooting.
-- **Future-proofs:** Preserves knowledge amid changes.
-
-**Example**: README with examples onboards engineers more quickly.
-
----
-
-## Poor Documentation Pitfalls
-
-- **Confusion:** Leads to errors, miscommunication.
-- **Inefficiency:** Time wasted reverse-engineering.
-- **Knowledge loss:** Gaps when experts leave (bus factor).
-- **Costs:** Builds technical debt, rework.
-
-**Example**: Undocumented code wastes hours on logic decoding.
-
 ---
 
 ## Bus Factor Defined
@@ -127,9 +103,7 @@ graph LR
 
 ---
 
-## Flawed Paper Tools Workflow
-
-### Legacy process:
+## Legacy process:
 
 **Steps**:
 

@@ -21,27 +21,15 @@ urlcolor: blue
 ## Overview
 
 - Project Backbone
-- Bus Factor Risks
-- Trained for Paper (Issue)
+- Trained for Paper
+- Big Pictue
 - Collaboration Benefits
-- User Experience Boost
-- Document Best Practices
-- Document Life Cycle
-- Team Sport Mindset
-- Workflow Tools
-
----
-
-## Overview (cont)
-
-- Markdown Authoring
-- Mermaid Diagrams
-- VS Code Editing
-- Pandoc Conversion
-- CSS Styling
-- GitHub Collaboration
-- Makefile Automation
-- SNOW KB Publishing
+- Best Practices
+- Process Workflow
+- Markdown
+- Mermaid
+- Process Steps
+- Jenkins CI/CD
 - Next Steps
 - Summary
 - Key Takeaways

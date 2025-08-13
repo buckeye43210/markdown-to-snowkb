@@ -1,14 +1,15 @@
----
+--
 title: "Documentation: A Team Sport"
 subtitle: "Collaborative Environment for Document Publication"
 author: "Rick Holbert"
-date: "13 August 2025"
+date: \today
 aspectratio: 1610
 theme: "PaloAlto"
 colortheme: "whale"
 fonttheme: "professionalfonts"
 navigation: frame
 header-includes:
+- \usepackage[en-AU]{datetime2}
 - \usepackage{hyperref}
 hyperrefoptions:
 colorlinks: true

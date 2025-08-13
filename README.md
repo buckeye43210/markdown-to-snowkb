@@ -174,22 +174,19 @@ graph LR
 
 ---
 
-**Challenges**:
+## **Hello World!** in Markdown
 
-- File name chaos: `doc_2012_final2.docx`.
-- Revision history: Unclear edits, no simultaneous work, no branches.
-
----
-
-## **Hello World! in Markdown
+<center>
 
 ```text
 **Hello World!***
 ```
 
+</center>
+    
 ---
 
-## **Hello World** in MS Word
+## **Hello World** in MS Word XML
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <w:document xmlns:w="http://schemas.openxmlformats.org/...">

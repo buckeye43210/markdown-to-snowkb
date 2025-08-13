@@ -1,4 +1,4 @@
---
+---
 title: "Documentation: A Team Sport"
 subtitle: "Collaborative Environment for Document Publication"
 author: "Rick Holbert"

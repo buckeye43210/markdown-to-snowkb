@@ -35,7 +35,9 @@ urlcolor: blue
 ---
 
 ## The Big Picture
+
 <center>
+
 ```mermaid
 graph TD
     A[Team Sport<br>Mentality]
@@ -46,3 +48,6 @@ graph TD
     C --> E
     D --> E
     E --> F[Project Success]
+```
+
+</center>

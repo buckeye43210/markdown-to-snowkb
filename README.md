@@ -2,14 +2,13 @@
 title: "Documentation: A Team Sport"
 subtitle: "Collaborative Environment for Document Publication"
 author: "Rick Holbert"
-date: \today
+date: "13 August 2025"
 aspectratio: 1610
 theme: "PaloAlto"
 colortheme: "whale"
 fonttheme: "professionalfonts"
 navigation: frame
 header-includes:
-- \usepackage[en-AU]{datetime2}
 - \usepackage{hyperref}
 hyperrefoptions:
 colorlinks: true
@@ -21,8 +20,6 @@ urlcolor: blue
 ## Overview
 
 - Project Backbone
-- Knowledge Sharing
-- Pitfalls of Poor Documents
 - Bus Factor Risks
 - Trained for Paper (Issue)
 - Collaboration Benefits
@@ -50,6 +47,33 @@ urlcolor: blue
 
 ---
 
+## The Big Picture
+
+<centering>
+
+```mermaid
+graph TD
+    A(Team Sport<br> Mentality)
+    A --> B(Longevity)
+    A --> C(Automated Workflows)
+    A --> D(Clarity)
+    B --> E(Documentation<br> Collaboration)
+    C --> E
+    D --> E
+    E --> F(Project Success)
+
+    style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
+    style B fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
+    style C fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
+    style D fill:#2E8B57,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
+    style E fill:#20B2AA,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
+    style F fill:#20B2AA,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
+```
+
+</centering>
+
+---
+
 ## Documentation: Successful Project Backbone
 
 - **Clarity:** Aligns team goals, processes, tech details.
@@ -59,7 +83,7 @@ urlcolor: blue
 
 ---
 
-## Bus Factor Defined
+## Bus Factor
 
 - **Measure:** Key individuals whose absence stalls project.
 - **Low (1-2):** High risk, concentrated knowledge.
@@ -70,8 +94,10 @@ urlcolor: blue
 
 - Document processes/code/decisions.
 - Cross-train teams.
-- Use wikis/Git repos.
+- Use Wikis/Git Repos/Confluence/SNOW KB.
 - Pair programming/code reviews.
+
+<center>
 
 ```mermaid
 graph LR
@@ -89,6 +115,8 @@ graph LR
     class B,C low;
     class D,E high;
 ```
+
+</center>
 
 ---
 
@@ -177,27 +205,29 @@ graph LR
 **Any Questions?**
 
 ---
-
-## Solution: Version Control & Web-First
-
-**Version Control**:
-
-- **Git**: (2005) tracks changes (character-level), branches, discussions.
-- **Free**: DevOps Staple.
-
-**Web-first flow**:
+## Web-first flow
 
 1. **Markdown**: Text-based content.
-2. **Tools**: VS Code (edit).
-3. **Git**: Version control.
-4. **Git Repo**: Review, collaborate.
+2. **Tools**:
+    - VS Code (edit).
+    - Linters (spelling, syntax, prose).
+    - Git (versioning).
+    - Pandoc (rendering).
+    - Automation (publishing).
+3. **GitHub Repo**: Review, Collaborate.
+4. **Wiki, Confluence, SNOW KB**: Consumption.
+
 
 ```mermaid
 graph LR
     A(Markdown content)
     A --> B(VS Code)
-    B --> C(Git version control)
-    C --> D(Git Repo)
+    B --> C(Linting)
+    C --> D(Git version control)
+    D --> E(Remdering)
+    E --> F(Automation)
+    F --> G(GitHub Repo)
+    G --> H(Consumption)
 
     classDef markdown fill:#f9e79f,stroke:#333,stroke-width:2px;
     classDef git fill:#a9dfbf,stroke:#333,stroke-width:2px;
@@ -214,29 +244,6 @@ graph LR
 - **Break** proprietary traps: focus on document essence.
 
 **Credit**: Ben Balter (2012).
-
----
-
-## The Big Picture
-
-```mermaid
-graph TD
-    A(Team Sport<br> Mentality)
-    A --> B(Longevity)
-    A --> C(Automated Workflows)
-    A --> D(Clarity)
-    B --> E(Documentation<br> Collaboration)
-    C --> E
-    D --> E
-    E --> F(Project Success)
-
-    style A fill:#4682B4,stroke:#2E8B57,stroke-width:2px,color:#FFFFFF
-    style B fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
-    style C fill:#ADD8E6,stroke:#2E8B57,stroke-width:2px
-    style D fill:#2E8B57,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
-    style E fill:#20B2AA,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
-    style F fill:#20B2AA,stroke:#4682B4,stroke-width:2px,color:#FFFFFF
-```
 
 ---
 
